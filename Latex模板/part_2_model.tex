@@ -1,0 +1,465 @@
+\section{Fusion Model based on RF, BP and CNN Algorithm}
+\subsection{The Transformation and Dimensionality Reduction of Sailing Price Index}
+Since one of the above Hull materials is a qualitative index, it is now converted into a quantitative index for subsequent calculation through the following rules.
+
+\begin{table}[htbp]
+    \begin{center}
+    \caption{Rules for Quantitative Conversion of Hull Material Index}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c}
+    \toprule[2pt]
+    Hull Materials&Values&Hull Materials&Values\\ %可以看情况不使用\multicolumn语法
+    \midrule
+    Glass Reinforced Plastic& 1 &Glass Fibre                     & 3 \\
+    Carbon Fiber            & 2 &Glassy CarbonComposite Material & 4 \\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+
+In addition, we will be catamaran as a 0-1 variable, plus hull length and factory year a total of 12 quantitative indicators. The principal component analysis method is selected for dimensionality reduction.
+
+Principal component analysis (PCA) is a statistical method for dimensionality reduc-tion. Through orthogonal transformation, the original random vector with component corre-lation is transformed into a new random vector with component uncorrelation, and the orig-inal variable is recombined into a group of several new comprehensive variables which are independent of each other. 
+
+\begin{enumerate}[\bfseries 1.]
+    \setlength{\parsep}{0ex} %段落间距
+    \setlength{\topsep}{0ex} %列表到上下文的垂直距离
+    \setlength{\itemsep}{0ex} %条目间距
+    \item The covariance matrix of 12 indexes can be obtained after centralization and mean removal.
+    \begin{align}
+        C=\left[ \begin{matrix}
+	    Cov\left( x_1,x_1 \right)&		Cov\left( x_1,x_2 \right)\\
+	    Cov\left( x_2,x_1 \right)&		Cov\left( x_2,x_2 \right)\\
+        \end{matrix} \right] ,\ \text{where\ }Cov\left( x_2,x_1 \right) =\frac{\sum_{i=1}^M{\left( x_{1}^{i}-\overline{x_1} \right) ^2}}{M-1}
+    \end{align}
+    In the above matrix, the diagonal is the variance of index and, and the non-diagonal is the covariance.
+   
+    \item By calculating the eigenvalues and eigenvectors of the covariance matrix, we can project the original features onto the selected eigenvectors and obtain the new K-dimensional features after dimensionality reduction.
+    \begin{align}
+      \left[ \begin{array}{c}
+	    y_{1}^{i}\\
+	    y_{2}^{i}\\
+	    \vdots\\
+	    y_{k}^{i}\\
+        \end{array} \right] =\left[ \begin{matrix}
+	    u_{1}^{T}&		\cdots&		\left( x_{1}^{i},x_{2}^{i},x_{3}^{i},\cdots ,x_{N}^{i} \right) ^T\\
+	    u_{2}^{T}&		\cdots&		\left( x_{1}^{i},x_{2}^{i},x_{3}^{i}\cdots ,x_{N}^{i} \right) ^T\\
+	    \vdots   &		\cdots&		\vdots\\
+	    u_{k}^{T}&		\cdots&		\left( x_{1}^{i},x_{2}^{i},x_{3}^{i},\cdots ,x_{N}^{i} \right) ^T\\
+        \end{matrix} \right] 
+    \end{align}    
+    The dimensionality reduction process is actually to project the original eigenvalue A $\left( x_{1}^{i},x_{2}^{i},x_{3}^{i},\cdots ,x_{N}^{i} \right) ^T$ of each sample into the new eigenvalue $\left( y_{1}^{i},y_{2}^{i},y_{3}^{i},\cdots ,y_{N}^{i} \right) ^T$B, and the above formula is the calculation formula of the new feature.
+    \item Through the above treatment, we can use the afternoon formula to calculate the contribution rate and cumulative contribution rate of each principal component;
+    \begin{align}
+        Con=\frac{\lambda _i}{\sum_{k=1}^p{\lambda _k}},\ \left( i=1,2,\cdots ,p \right) \\
+        Con^*=\frac{\sum_{k=1}^i{\lambda _k}}{\sum_{k=1}^p{\lambda _k}},\ \left( i=1,2,\cdots ,p \right) 
+    \end{align}
+\end{enumerate}
+
+We take the eigenvalue of the cumulative contribution rate between 80\% and 90\%. Where $\lambda _1,\lambda _2,\lambda _3,\cdots ,\lambda _i$ is the corresponding 1 to n principal components.
+After the above calculation, we can get the results of principal component analysis as shown in the table below.
+
+\begin{table}[htbp]
+    \begin{center}
+    \caption{Each Principal Component and its Cumulative Contribution Rate}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c c c}
+    \toprule[2pt] %在表内换行时使用\makecell[c]{A//B}的语法
+    \centering \textbf{\makecell[c]{Principal\\Component}}  &\centering \textbf{\makecell[c]{Characteristic\\Root}}   &\centering \textbf{ \makecell[c]{Cumulative \\Contribution Rate}} 
+    & \centering \textbf{\makecell[c]{Principal\\Component}} & \centering \textbf{\makecell[c]{Characteristic\\Root}}  &\textbf{\makecell[c]{Cumulative \\Contribution Rate}}\\
+    \midrule
+    $\lambda_1$& 4.5138 &37.61\% &$\lambda_7$   & 0.4898 &88.87 \%\\
+    $\lambda_2$& 1.7215 &51.96\% &$\lambda_8$   & 0.4001 &92.20 \%\\
+    $\lambda_3$& 1.2331 &62.24\% &$\lambda_9$   & 0.3735 &95.32 \%\\
+    $\lambda_4$& 1,0683 &71.14\% &$\lambda_{10}$& 0.3075 &97.88 \%\\
+    $\lambda_5$& 0.9123 &78.74\% &$\lambda_{11}$& 0.1543 &99.16 \%\\
+    $\lambda_6$& 0.7256 &84.79\% &$\lambda_{12}$& 0.1002 &100.00\%\\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+The red marks in the table above represent the principal components we have selected. It can be seen that the cumulative contribution rate of the 6 principal components is close to 85\%, so it is very reasonable to choose these as the principal components.
+
+The eigenvectors of some principal components are shown in the following table.
+
+
+
+
+\begin{table}[H] 
+    \begin{center}
+    \caption{Partial Principal Component Eigenvectors}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c c c c}
+    \toprule[2pt]
+    \textbf{/}&\textbf{Year}&\textbf{Beam length/m}&\textbf{Draft/m$^3$}&\textbf{Displacement/m$^3$}&\textbf{Sail area/m$^2$}&\textbf{Hull materials}\\ %m后面是列宽
+    \midrule
+    $\lambda_1$&7.2&1.15&11800&116&Carbon fiber&-0.0165 \\
+    $\lambda_6$&6.7&1.95&18000&163&Aluminium alloy&0.3338\\
+   % \hline\hline
+    \bottomrule[2pt]
+    \toprule[2pt]
+    \textbf{/}&\textbf{\makecell[c]{Engine\\hours/h}}&\textbf{\makecell[c]{Sleeping\\capacity/person} }&\textbf{Head-room/m}&\textbf{GDP/ Trillion\$}&\textbf{Length/ft}&\textbf{Catamarans?}\\ %m后面是列宽
+    \midrule
+    $\lambda_1$&7.2&1.15&11800&116&Carbon fiber&-0.0165 \\
+    $\lambda_6$&6.7&1.95&18000&163&Aluminium alloy&0.3338\\
+   % \hline\hline
+    \bottomrule[2pt]
+
+
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-1cm}
+Index dimension reduction can remove redundancy and noise features in the data, thus reducing the dimension of the data set, simplifying the complexity of the machine learning model, improving the generalization ability of the model, and avoiding the problem of over-fitting. Therefore, index dimension reduction can improve the efficiency and accuracy of machine learning algorithms on the premise of maintaining the integrity of data information
+
+\vspace{-0.5cm}
+
+\subsection{Price Prediction of RF, BP and CNN Algorithm}
+Random forest (RF)[1,2] is an integrated learning method that integrates multiple trees. It has the advantages of high accuracy and can be run on large data sets.
+
+The BP neural network calculates the loss function according to the forward propaga-tion of the input sample. If the error is inconsistent, the error is sent back as the reverse sig-nal, and the weight matrix is constantly modified to finally achieve the prediction effect.
+
+Convolutional neural network (CNN)[3] is a kind of feedforward neural network with depth structure, which is basically divided into three parts: convolutional layer, pooling lay-er and full connection layer. It alleviates the problem of vanishing gradient effectively and reduces the number of parameters to a certain extent.
+
+Sine and cosine algorithm (SCA) is a swarm intelligence optimization algorithm, which has the advantages of few parameters, simple structure and easy implementation. We com-bine it with the above three methods to get the optimized.
+
+We respectively predicted by RF, BP and CNN models, combined with SCA optimiza-tion algorithm to calculate the predicted value of the price and compared it with the original price, as shown in the figure below.
+
+\begin{figure}[H]
+    \centering    
+    \subfigure[RF Method]{				% 图片1([]内为子图标题)						
+    \includegraphics[width=0.31\textwidth]{test_6.png}}			  % 子图1的图片宽度 不能空行
+    \subfigure[BP Method]{				% 图片2
+    \includegraphics[width=0.31\textwidth]{test_8.png}} 
+    \subfigure[CNN Method]{				% 图片2
+    \includegraphics[width=0.31\textwidth]{test_10.png}} 
+	\caption{RF, BP, and CNN Predicted Results Compared} % 图片标题 
+\end{figure}
+\begin{figure}[H]
+    \centering  
+    \subfigure[MSE of RF Method]{				% 图片1([]内为子图标题)						
+    \includegraphics[width=0.30\textwidth]{test_7.png}}			  % 子图1的图片宽度 不能空行
+    \subfigure[MSE of BP Method]{				% 图片2
+    \includegraphics[width=0.33\textwidth]{test_9.png}} 
+    \subfigure[MSE of CNN Method]{				% 图片2
+    \includegraphics[width=0.30\textwidth]{test_11.png}} 
+    \caption{MSE of RF, BP, and CNN Predicted Results} % 图片标题 
+\end{figure}
+\vspace{-0.5cm}
+As can be seen from the figure above, although RF, BP and CNN models have certain predictive functions, their predictive values are not accurate enough and sometimes have large deviations, showing instability. So let's try to mix the models to get a better forecast.
+
+\subsection{Algorithm fusion and fusion model proposed}
+In order to further reduce the prediction error, we further adopted the weighted average model fusion method, whose calculation formula is as follows:
+\begin{align}
+    \overline{\widehat{y}}=\frac{a_1\widehat{y_1}+a_2\widehat{y_2}+a_3\widehat{y_3}}{a_1+a_2+a_3}
+\end{align}
+
+Where $a_1$, $a_2$ and $a_3$ are the weights of RF, BP and CNN respectively.
+Since there is no code to directly mix and improve the prediction model in MATLAB, pseudo-code is used here to represent the model mixing process.
+
+\begin{algorithm}[H]
+    \caption{RF, BP and CNN Model Fusion Pseudo-code}
+    \SetAlgoLined
+    \KwIn{Predicted value (RF, BP \& CNN) \& Actual value}
+    \KwOut{$a_i, i=1,2,3$}
+    \emph{\textbf{Definition}: $J=Inf$  \& Create $a_{right}$ matrix to record the values of $a_1$, $a_2$ and $a_3$}\;
+    \For{$a_3 = 0 to 1(step = 0.01)$}{
+        Define the objective function:
+        $f\left( a_1 \right) =\min \left\{ \sum{\left( y-\left( a_1x_1+\left( 1-a_3-a_2 \right) x_2+a_3x_3 \right) \right)}^2 \right\} $\;
+        Using function fmincon, solve the optimization problem\;
+        When the solution is complete, return the resulting $a_1$ and $f(a_1)$\;
+        \If{$f(a_1) < J$}{
+            $J<--f(a_1)$\;
+            Update $a_{right}$ matrix\;
+        } 
+    }
+  \end{algorithm}
+
+  After integrating the models, we used the mixed model to re-forecast the price and compared it with the actual price as shown in the figure below.
+\begin{figure}[H]  %h此处，t页顶，b页底，p独立一页，浮动体出现的位置
+    \centering  %图表居中
+    \includegraphics[width=.85\textwidth]{test_12.png} %图片的名称或者路径之中有空格会出问题 
+    \caption{Comparison of Prediction Results of Fusion Models} % 图片标题 
+    \vspace{-0.5cm}
+\end{figure}
+%\vspace{-0.5cm}
+By comparing the fusion model with the original model, we calculated R2, MSE and Fusion weight, and found that the prediction effect of the fusion model was better than the other three.
+
+\begin{table}[htbp]
+    \begin{center}
+    \caption{Comparison between the Original Model and the Fusion Model}
+    \resizebox{\textwidth}{!} %控制表格整体与文字同宽
+    {\begin{tabular}{c c c c}
+    \toprule[2pt]
+    \multicolumn{1}{m{4cm}}{\centering \textbf{}} %此处表格过小，如果不设置行宽会导致文字变大
+    &\multicolumn{1}{m{4cm}}{\centering \textbf{R$^2$}}
+    &\multicolumn{1}{m{4cm}}{\centering \textbf{MSE}}
+    &\multicolumn{1}{m{4cm}}{\centering \textbf{Fusion Weight}}\\
+    %1&R$^2$&MSE&Fusion Weight\\ %可以看情况不使用\multicolumn语法
+    \midrule
+    RF           & 0.8035 & 1.7178 & 0.284 \\
+    BP           & 0.8362 & 1.3248 & 0.562 \\
+    CNN          & 0.7824 & 2.0356 & 0.164 \\
+    Fusion Model & 0.8818 & 0.8997 &   -   \\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+\subsection{Discussion on the Accuracy of Price Prediction}
+In order to estimate the estimation accuracy of our model against price, we first remove the data of the upper and lower quartiles corresponding to the estimation error, and draw a direct statistical graph of the price accuracy according to the remaining data.
+
+\begin{figure}[H]  %h此处，t页顶，b页底，p独立一页，浮动体出现的位置
+    \centering  %图表居中
+    \includegraphics[width=.65\textwidth]{test_13.png} %图片的名称或者路径之中有空格会出问题 
+    \caption{Prediction Error of Fusion Model} % 图片标题 
+    \vspace{-0.5cm}
+\end{figure}
+
+As can be seen from the above figure, the estimated error of our model is concentrated around 7\%-14\%, which has a high accuracy. The average error is 0.1141.
+
+
+%————————————————————————————————————————————————————————————————————————%
+\section{Multiple Regression Analysis Models for Different Regions}
+\subsection{Trial Regression of Multiple Regression with Conditional Tests}
+Multiple regression is a statistical analysis method that establishes a linear or nonlinear mathematical model of the amount of relationship between multiple variables and uses sam-ple data for analysis.
+
+In order to measure the impact of the area where the sailboat is sold on the price, four indicators were selected for each area as a measure of area. GDP per capita and unemploy-ment rate reflect the local economic level and purchasing power. Average local precipitation and average temperature reflect the environmental requirements of sailing.
+
+Since the magnitude of the indicators can have an impact on the regression analysis, we standardized the data by the following formula.
+\begin{align}
+    X'=\frac{X-\mu}{\sigma}
+\end{align}
+We first performed a trial regression to determine the feasibility of the regression, and if Prob>F is less than 0.05, it means that it is significant with 95\% probability. Next we test for heteroskedasticity and the presence of multicollinearity: if Prob>chi2 is less than 0.05 then there is a 95\% probability that the heteroskedasticity exists is significant. If VIF>10, there is significant multicollinearity in the regression. The results are displayed in the table below.
+\vspace{-0.5cm}
+\begin{table}[H]
+    \begin{center}
+    \caption{Test Regression and Test Results}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c}
+    \toprule[2pt]
+     &Test Regression Results&Heteroskedasticity Test&Multicollinearity Test\\ %可以看情况不使用\multicolumn语法
+    \midrule
+    Value   & 0.0000 & 0.0990 & 1.56 \\
+    Results & Pass   & Fail   & Pass \\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+We found that the data set had significant heteroskedasticity, so we used least squares with robust standard errors for the regression.
+
+\subsection{Calculation of regional effect indicators for all-round sailboats}
+
+We calculated the regression equation based on the Stata software and obtained the co-efficients in the following table.	
+\vspace{-0.5cm}
+\begin{table}[H]
+    \begin{center}
+    \caption{Regression Results of Each Indicator}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c c}
+    \toprule[2pt]
+    \multicolumn{1}{m{5cm}}{\centering \textbf{}} %此处表格过小，如果不设置行宽会导致文字变大
+    &\multicolumn{1}{m{3cm}}{\centering \textbf{Coefficient}}
+    &\multicolumn{1}{m{3cm}}{\centering \textbf{Std. err}}
+    &\multicolumn{1}{m{2.5cm}}{\centering \textbf{t}}
+    &\multicolumn{1}{m{2.5cm}}{\centering \textbf{P>|t|}}\\
+    \midrule
+    Unemployment rate   & -0.0141 & 0.0189 & -0.75 & 0.456 \\
+    Average temperature & 0.1072  & 0.0212 & 5.05 & 0.000\\
+    GDP per capita   & 0.0175 & 0.0198 & 0.89 & 0.376\\
+    Average precipitation & -0.2754   & 0.0193 & -1.42 & 0.155\\
+    Constants & 0.0000 & 0.0168 & -0.00 & 1.000\\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+
+The coefficients in the above table indicate the degree of influence of the independent variable on the dependent variable. The absolute value of the coefficient reflects the degree of influence on the listing price of the sailboat.
+
+GDP per capita and average temperature are positively correlated with sailboat prices, suggesting that when the economy is higher or the temperature is higher, people are more enthusiastic about water sports such as sailing, which leads to higher sales prices at that time. On the other hand, precipitation and unemployment reduce the sales of sailboats, which leads to lower prices.
+
+From this, we can obtain the corresponding regression equation:
+\begin{align}
+    y=\sum_{i=1}^4{a_ix_i+C}
+\end{align}
+Where $a_1$ to $a_4$ represents the coefficient of each indicator.
+
+The equation obtained the regression equation by multiple regression through four re-gional indicators that may affect the price of sailboats, which better describes the influence of region on the listing price of sailboats.
+
+For the regional effects of each sailing variant, we used the coefficients of each indica-tor as weights to calculate the sequential change in prices. Based on the change in their price order we can compare the regional effects of each sailing variant.
+
+\begin{figure}[H]  %h此处，t页顶，b页底，p独立一页，浮动体出现的位置
+    \centering  %图表居中
+    \includegraphics[width=.90\textwidth]{test_14.png} %图片的名称或者路径之中有空格会出问题 
+    \caption{ Calculation Method of Regional Effect Indicators} % 图片标题 
+    \vspace{-0.5cm}
+\end{figure}
+
+This figure shows in detail how the area effect metrics were calculated for the various sailboat variants. By calculating as above, we can obtain the area effect for each sailboat variant.
+
+We noted in our calculations that variants of sailboats sold in only one region do not re-flect a regional effect. Therefore, we rounded off the sailboat types with only one data to obtain the regional effects for each type of sailboat variants as shown in the figure and cal-culated the sailboat models with insignificant regional effects to obtain the table below.
+\vspace{-0.5cm}
+\begin{figure}[H]
+    \centering    
+    \subfigure[Division of Different Regional Effects(left)]{				% 图片1([]内为子图标题)						
+    \includegraphics[width=0.45\textwidth]{test_15.png}}			  % 子图1的图片宽度 不能空行
+    \subfigure[The Proportion of Different Regional Effects(right)]{				% 图片2
+    \includegraphics[width=0.45\textwidth]{test_16.png}} 
+	\caption{Indicators of Regional Effects of Sailing} % 图片标题 
+\end{figure}
+\vspace{-0.5cm}
+Statistically, there are 19(3.76\%) categories of sailboat variants with obvious regional effects, 124(24.55%) categories of sailboats with insignificant regional effects, and 362(71.68\%) categories of sailboats that do not satisfy the regional effects.
+
+\vspace{-0.5cm}
+\begin{table}[H]
+    \begin{center}
+    \caption{ Types of Sailboats with Large Regional Effects}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{p{4cm} p{4cm} p{4cm} p{4cm}}
+    \toprule[2pt]
+    \multicolumn{4}{c}{Sailboat variants with insignificant regional effects}\\
+    %\multirow{4}*{Sailboat variants with insignificant regional effects}\\
+    \midrule
+    Hanse 411  & Hanse 461 & Hanse 531 & Hanse 400 \\
+    Beneteau Oceanis 40 & Beneteau Oceanis 45  & Beneteau Oceanis 50 & \makecell[c]{Fountaine\\PajotHelia 44} \\
+    Dufour 40   & Dufour 385 GL & Dufour 385 & Leopard 40\\
+    Leopard 47 & Leopard 43 & Leopard 46 & Leopard 38  \\
+    Leopard 39 & Leopard 44 & Leopard 48 & \\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+
+\subsection{Discussion of Regional Effects of Sailing Variants}
+\begin{itemize}
+    \setlength{\parsep}{0ex} %段落间距
+    \setlength{\topsep}{2ex} %列表到上下文的垂直距离
+    \setlength{\itemsep}{1ex} %条目间距
+    \item Statistical impactions of regional effects:\\
+    As can be seen from the table, the regression coefficients for environmental factors are generally larger, so the impact of the environment on sailboat prices is greater than that of economic factors.
+    \item Practical Implications of Regional Effects:\\
+    We can see that local unemployment and average precipitation reduce sailboat prices while average GDP and average temperature increase them. Therefore, for sailboat enthusiasts, they can buy a sailboat in the right region to reduce the cost, while for sailboat brokers, they should take these factors into account to increase the total sales and increase the profit.
+\end{itemize}
+
+\section{Hong Kong Area Analysis Using BP Neural Network and MLR}
+\subsection{Selection of a subset of sailboats}
+From the multiple linear regression model in the second question, we can see that the four indicators in different regions have different degrees of influence on the listing price of sailboats, so we assign different weights to each indicator before we do the correlation anal-ysis, specifically: 0.0850, 0.6440, 0.1056, 0.1654.
+
+Since we need to study the regional influence of the selling price of sailboats in Hong Kong, we first select a subset of data from the given data for each of monohull and catama-ran sailboats. And the information of the region is required to be highly correlated with the Hong Kong region. So we calculate the Pearson correlation coefficient for each data in monohull and catamaran separately with the data in Hong Kong region.
+
+The Pearson correlation coefficient describes the degree of linear correlation of two continuous variables and takes values between -1 and 1. -1 means that the two variables are negatively correlated, 0 means that the two variables are uncorrelated, and 1 means that the two variables are positively correlated. It's specific calculation formula is as follows:[7,8]
+
+\begin{align}
+    r\left( X,\ Y \right) =\frac{\text{Cov}\left( X,\ Y \right)}{\sqrt{\text{Var}\left[ X \right] \text{Var}\left[ Y \right]}}
+\end{align}
+In this question, we correlate the data from the Hong Kong region with the cross-sectional data in the dataset. The finalized data set is 175 for monohulls and 348 for catamarans.
+
+\subsection{BP Network Forecast of Used Sailboat Prices in Hong Kong}
+Since the price of sailboats in Hong Kong has a large deviation and is not easy to find, we build a network based on the existing data set to predict as the selling price of sailboats in Hong Kong, the specific prediction steps are shown in the following figure:
+
+\begin{figure}[H]  %h此处，t页顶，b页底，p独立一页，浮动体出现的位置
+    \centering  %图表居中
+    \includegraphics[width=.90\textwidth]{test_17.png} %图片的名称或者路径之中有空格会出问题 
+    \caption{Construction of BP Neural Network Dataset} % 图片标题 
+\end{figure}
+\vspace{-0.5cm}
+Where $Z_1^i$ to $Z_4^i$ represents the four regional indicators of a region in row $i$ , and $Y_{rel}^i$B represents the actual sailing price in that region in row i. BP neural network model is built from multiple rows of data.
+
+By constructing the neural network dataset, we bring the dataset into the BP neural network for training and get the following results.
+
+\vspace{-0.5cm}
+\begin{figure}[H]
+    \centering    
+    \subfigure[Monohull Vessels(left)]{				% 图片1([]内为子图标题)						
+    \includegraphics[width=0.41\textwidth]{test_18.png}}			  % 子图1的图片宽度 不能空行
+    \subfigure[for Catamarans(right)]{				% 图片2
+    \includegraphics[width=0.49\textwidth]{test_19.png}} 
+	\caption{Hong Kong Region Sailing Forecast Results} % 图片标题 
+\end{figure}
+\vspace{-0.5cm} %这部分两图片不一样大造成排版有问题
+It can be seen that the results of the test set for both monohull and catamaran are great-er than 0.85.
+
+We take the regional indicators of Hong Kong, the regional indicators of other regions and the corresponding sailboat prices as inputs for prediction, and get the selling price of this type of sailboat in Hong Kong. If the boat is sold in more than one region then its predicted mean value is taken.
+
+\subsection{Analysis of the regional effects of sailing in Hong Kong}
+\subsubsection{Hong Kong Pair Concentration Sailboat Price Impact}
+
+We define the difference between the sailing price in Hong Kong and the sailing price in the original region as $\Delta y$ , and the difference between the regional indicator in Hong Kong and the original regional indicator is noted as $\Delta x_i (i=1,2,3,4)$, respectively. we use the multiple linear regression model of the second question to calculate the regression results for monohull and catamaran sailing boats separately as the following table.
+
+\vspace{-0.5cm}
+\begin{table}[H]
+    \begin{center}
+    \caption{ Types of Sailboats with Large Regional Effects}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c c c c c}
+    \toprule[2pt]
+    \multicolumn{3}{m{8cm}}{\centering \textbf{Monohull}}
+    &\multicolumn{3}{m{8cm}}{\centering \textbf{Catamaran}}\\
+    %\multicolumn{3}{c}{}
+    %&\multicolumn{3}{c}{}\\
+    \midrule
+      & Coefficient & P>|t| &  & Coefficient & P>|t|\\
+    \midrule
+    $\Delta x_1$ & -0.059 & 0.461 & $\Delta x_1$ & -0.061 & 0.446\\
+    $\Delta x_2$ & 0.169  & 0.008 & $\Delta x_2$ & 0.097  & 0.056 \\
+    $\Delta x_3$ & 0.234  & 0.116 & $\Delta x_3$ & 0.125  & 0.152\\
+    $\Delta x_4$ & -0.416 & 0.002 & $\Delta x_4$ & -0.189 & 0.000\\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+
+The results in the table show that for monohull sailboats, the change in average tem-perature and average precipitation has a more significant effect on  , and for catamaran sailboats, the amount of change in average precipitation has a more significant effect on  .
+
+Similarly, we use a similar analysis to the second question to calculate the regional ef-fect of Hong Kong SAR on both subsets of sailboats. We list the sailboat variants for which the Hong Kong SAR effect is more significant in the following table.
+
+\vspace{-0.5cm}
+\begin{table}[H]
+    \begin{center}
+    \caption{Sailboats with a clear regional effect in Hong Kong}
+    \resizebox{\textwidth}{!}
+    {\begin{tabular}{c c}
+    \toprule[2pt]
+    \multicolumn{1}{m{8cm}}{\centering \textbf{Monohull}}
+    &\multicolumn{1}{m{8cm}}{\centering \textbf{Catamaran}}\\
+    \midrule
+    Nautitech 40 & Tartan 4300\\
+    Catana 47 Ocean Class & Dufour 520 GLO Owner version\\
+    Leopard 44 & Elan Impression 45 \\
+    Fountaine Pajot SABA50 & \\
+    Bali4.6 & \\
+    \bottomrule[2pt]
+    \end{tabular}}
+    \end{center}
+\end{table}
+\vspace{-0.5cm}
+
+
+\subsubsection{Regional effects of monohull and catamaran sailing}
+
+To measure whether the regional effects are the same for the subset of monohulls and catamarans in Hong Kong, we cross-tabulate the data for monohulls and catamarans and the model for monohulls and catamarans. The regional effect is the same if the error of bringing the monohull data into the catamaran model is less than 10\%, and vice versa, and the same for the catamaran.
+
+A total of 23 monohulls and 33 catamarans were counted, and the regional effect of Hong Kong on these sailboats is independent of whether they are monohulls or catamarans. We selected these sailing companies for statistics to get the following figure.
+
+\vspace{-0.5cm}
+\begin{figure}[H]
+    \centering    
+    \subfigure[Monohull Company(left)]{				% 图片1([]内为子图标题)						
+    \includegraphics[width=0.43\textwidth]{test_20.png}}			  % 子图1的图片宽度 不能空行
+    \subfigure[Catamaran Company(right)]{				% 图片2
+    \includegraphics[width=0.47\textwidth]{test_21.png}} 
+	\captionsetup{justification=centering} 
+    \caption{The Hong Kong region has a consistent impact on \protect\\ whether the company produces monohull vessels} % 图片标题 
+\end{figure}
+\vspace{-0.5cm} %这部分两图片不一样大造成排版有问题
+
+From the figure we can see that the monohulls similar to Hong Kong area are mainly Bavaria, Hunter, Jeanneau and Beneteau. The catamarans similar to Hong Kong area are Fountaine Pajot, Nautitech and Lagoon.
+
+
+
+

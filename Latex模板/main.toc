@@ -1,0 +1,37 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Background}{3}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Restatement of the Problem}{3}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {1.3}Our Work}{4}{subsection.0.1.3}%
+\contentsline {section}{\numberline {2}Assumptions and Explanations}{4}{section.0.2}%
+\contentsline {section}{\numberline {3}Notations}{5}{section.0.3}%
+\contentsline {section}{\numberline {4}Model Preparation}{5}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Data Overview}{5}{subsection.0.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Data Collection}{6}{subsubsection.0.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Data Screening}{6}{subsubsection.0.4.1.2}%
+\contentsline {section}{\numberline {5}Fusion Model based on RF, BP and CNN Algorithm}{7}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}The Transformation and Dimensionality Reduction of Sailing Price Index}{7}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Price Prediction of RF, BP and CNN Algorithm}{9}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}Algorithm fusion and fusion model proposed}{10}{subsection.0.5.3}%
+\contentsline {subsection}{\numberline {5.4}Discussion on the Accuracy of Price Prediction}{11}{subsection.0.5.4}%
+\contentsline {section}{\numberline {6}Multiple Regression Analysis Models for Different Regions}{12}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Trial Regression of Multiple Regression with Conditional Tests}{12}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {6.2}Calculation of regional effect indicators for all-round sailboats}{12}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.3}Discussion of Regional Effects of Sailing Variants}{14}{subsection.0.6.3}%
+\contentsline {section}{\numberline {7}Hong Kong Area Analysis Using BP Neural Network and MLR}{15}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}Selection of a subset of sailboats}{15}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {7.2}BP Network Forecast of Used Sailboat Prices in Hong Kong}{15}{subsection.0.7.2}%
+\contentsline {subsection}{\numberline {7.3}Analysis of the regional effects of sailing in Hong Kong}{17}{subsection.0.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Hong Kong Pair Concentration Sailboat Price Impact}{17}{subsubsection.0.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Regional effects of monohull and catamaran sailing}{17}{subsubsection.0.7.3.2}%
+\contentsline {section}{\numberline {8}Conclusions and Interesting Information}{18}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Useful and Meaningful Conclusions}{18}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}Interesting Conclusions}{19}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Sensitivity Analysis}{19}{section.0.9}%
+\contentsline {section}{\numberline {10}Model Evaluation and Further Discussion}{20}{section.0.10}%
+\contentsline {subsection}{\numberline {10.1}Strengths}{20}{subsection.0.10.1}%
+\contentsline {subsection}{\numberline {10.2}Weaknesses $\&$Further Discussion}{20}{subsection.0.10.2}%
+\contentsline {section}{\numberline {11}Conclusion}{21}{section.0.11}%
+\contentsline {section}{References}{22}{section.0.12}%
+\contentsline {section}{\numberline {A}First Section}{22}{appendix.A}%
+\contentsline {section}{\numberline {B}ccODE}{23}{appendix.B}%
+\contentsfinish 

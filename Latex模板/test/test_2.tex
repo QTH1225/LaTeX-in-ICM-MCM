@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage{minted}
+\usepackage{cleveref}
+\usepackage{caption}
+
+\setminted{
+	frame=lines
+	tabsize=4
+	encoding=utf8
+}
+
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+\renewcommand{\listingscaption}{}
+\renewcommand\listoflistingscaption{}
+\crefname{listing}{}{}
+
+
+\begin{document}
+
+\begin{longlisting}
+%\inputminted{C}{snippets/main.c}
+\begin{minted}{c}  
+
+ \end{minted}  
+\caption{Hello World}
+\label{lst:example}
+\end{longlisting}
+\cref{lst:example} 
+
+\listoflistings
+
+
+
+\end{document}
