@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.0.1}%
+\contentsline {subsection}{\numberline {1.1}Problem Background}{3}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {1.2}Restatement of the Problem}{3}{subsection.0.1.2}%
+\contentsline {section}{\numberline {2}Assumptions and Explanations}{3}{section.0.2}%
+\contentsline {section}{\numberline {3}Notations}{4}{section.0.3}%
+\contentsline {section}{\numberline {4}Model Preparation}{4}{section.0.4}%
+\contentsline {subsection}{\numberline {4.1}Data Overview}{4}{subsection.0.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Data Collection}{4}{subsubsection.0.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Data Screening}{5}{subsubsection.0.4.1.2}%
+\contentsline {section}{\numberline {5}Layout of Formulas, Graphs and Tables}{5}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Layout of Formulas}{5}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Layout of Figures}{6}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}Layout of Special Tables}{7}{subsection.0.5.3}%
+\contentsline {section}{\numberline {6}Conclusions and Interesting Information}{7}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Useful and Meaningful Conclusions}{7}{subsection.0.6.1}%
+\contentsline {section}{\numberline {7}Sensitivity Analysis}{7}{section.0.7}%
+\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{8}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Strengths}{8}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}Weaknesses $\&$Further Discussion}{8}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Conclusion}{8}{section.0.9}%
+\contentsline {section}{References}{9}{section.0.10}%
+\contentsline {section}{\numberline {A}First Section}{9}{appendix.A}%
+\contentsline {section}{\numberline {B}CODE}{10}{appendix.B}%
+\contentsfinish 
