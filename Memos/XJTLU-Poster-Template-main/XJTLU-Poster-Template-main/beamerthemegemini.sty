@@ -1,0 +1,220 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+% ====================
+% Dependencies
+% ====================
+\RequirePackage{exscale}
+\RequirePackage{ragged2e}
+\RequirePackage{changepage}
+\RequirePackage{fontspec}
+\RequirePackage{calc}
+\RequirePackage{DejaVuSans}
+% ====================
+% Fonts
+% ====================
+\newfontfamily\DejaVuSans[Ligatures=TeX]{DejaVuSans}
+
+\setmainfont{DejaVuSans}
+\setsansfont{DejaVuSans}
+
+\setbeamerfont{headline}{family=\DejaVuSans}
+\setbeamerfont{headline title}{size=\LARGE}%,series=\bfseries}
+\setbeamerfont{headline author}{size=\Large}
+\setbeamerfont{headline institute}{size=\normalsize}
+\setbeamerfont{block title}{family=\DejaVuSans,size=\Large}%,series=\bfseries}
+\setbeamerfont{heading}{family=\DejaVuSans,series=\bfseries}
+\setbeamerfont{caption}{size=\small,series=\itshape}
+\setbeamerfont{footline}{family=\DejaVuSans,size=\normalsize}
+
+% ====================
+% Macros
+% ====================
+
+\newcommand{\samelineand}{\qquad}
+
+% ====================
+% Elements
+% ====================
+
+% List
+\makeatletter
+\def\@listi{\leftmargin\leftmarginii
+\topsep 1ex % spacing before
+\parsep 0\p@ \@plus\p@
+\itemsep 0.5ex} % spacing between
+\makeatother
+
+% Itemize
+
+\setbeamertemplate{itemize item}{\raise0.5ex \hbox{\vrule width 0.5ex height 0.5ex}}
+\setbeamertemplate{itemize subitem}{\raise0.3ex \hbox{\vrule width 0.5ex height 0.5ex}}
+\setbeamertemplate{itemize subsubitem}{\raise0.2ex \hbox{\vrule width 0.5ex height 0.5ex}}
+
+% Enumerate
+
+\setbeamertemplate{enumerate item}{\insertenumlabel.}
+\setbeamertemplate{enumerate subitem}{\insertsubenumlabel.}
+\setbeamertemplate{enumerate subsubitem}{\insertsubsubenumlabel.}
+
+% Equation
+\setlength\belowdisplayshortskip{2ex}
+
+% Caption
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}[period]
+\setlength{\abovecaptionskip}{2ex}
+\setlength{\belowcaptionskip}{1ex}
+
+% Bibliography
+\setbeamertemplate{bibliography item}[text]
+
+% Navigation
+\beamertemplatenavigationsymbolsempty
+
+% ====================
+% Components
+% ====================
+
+% Heading
+\newcommand\heading[1]
+{%
+  \par\bigskip
+  {\usebeamerfont{heading}\usebeamercolor[fg]{heading}#1}\par\smallskip
+}
+
+% logo
+\newlength{\logoleftwidth}
+\setlength{\logoleftwidth}{0cm}
+\newlength{\logorightwidth}
+\setlength{\logorightwidth}{0cm}
+\newlength{\maxlogowidth}  % space on both sides set to maxlogowidth to keep title centered
+\setlength{\maxlogowidth}{0cm}
+
+\newcommand{\logoright}[1]{
+  \newcommand{\insertlogoright}{#1}
+  \settowidth{\logorightwidth}{\insertlogoright}
+  \addtolength{\logorightwidth}{10ex}
+  \setlength{\maxlogowidth}{\maxof{\logoleftwidth}{\logorightwidth}}
+}
+\newcommand{\logoleft}[1]{
+  \newcommand{\insertlogoleft}{#1}
+  \settowidth{\logoleftwidth}{\insertlogoleft}
+  \addtolength{\logoleftwidth}{10ex}
+  \setlength{\maxlogowidth}{\maxof{\logoleftwidth}{\logorightwidth}}
+}
+
+% Headline
+
+\setbeamertemplate{headline}
+{
+  \begin{beamercolorbox}{headline}
+    \begin{columns}
+      \begin{column}{\maxlogowidth}
+        \vskip5ex
+        \ifdefined\insertlogoleft
+        \vspace*{\fill}
+        \hspace{10ex}
+        \raggedright
+        \insertlogoleft
+       \vspace*{\fill}
+        \else\fi
+      \end{column}
+      \begin{column}{\dimexpr\paperwidth-\maxlogowidth-\maxlogowidth}
+        \usebeamerfont{headline}
+       \vskip3ex
+        \centering
+        {\usebeamerfont{headline title}\usebeamercolor[fg]{headline title}\inserttitle\\[0.5ex]}
+        {\usebeamerfont{headline author}\usebeamercolor[fg]{headline author}\insertauthor\\[1ex]}
+        {\usebeamerfont{headline institute}\usebeamercolor[fg]{headline institute}\insertinstitute\\[1ex]}
+      \end{column}
+      \begin{column}{\maxlogowidth}
+        \vskip5ex
+        \ifdefined\insertlogoright
+        \vspace*{\fill}
+        \raggedleft
+        \insertlogoright
+        \hspace{10ex}
+        \vspace*{\fill}
+        \else\fi
+      \end{column}
+    \end{columns}
+    \vspace{5ex}
+    \ifbeamercolorempty[bg]{headline rule}{}{
+      \begin{beamercolorbox}[wd=\paperwidth,colsep=0.5ex]{headline rule}\end{beamercolorbox}
+    }
+\end{beamercolorbox}
+}
+
+% Block
+\setbeamertemplate{block begin}
+{
+  \begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block title}
+    \vskip0pt
+    \usebeamerfont{block title}\insertblocktitle
+    \vskip-1.25ex
+    \begin{beamercolorbox}[colsep=0.025ex]{block separator}\end{beamercolorbox}
+  \end{beamercolorbox}
+  {\parskip0pt\par}
+  \setbeamerfont{block body}{size=\Large}
+  \usebeamerfont{block body}
+  \vskip-0.5ex
+  \begin{beamercolorbox}[colsep*=0ex]{block body}
+  \justifying
+  \setlength{\parskip}{1ex}
+  \vskip-2ex
+}
+\setbeamertemplate{block end}
+{
+  \end{beamercolorbox}
+  \vskip0pt
+  \vspace*{2ex}
+}
+
+% Alert Block
+\setbeamertemplate{block alerted begin}
+{
+  \begin{beamercolorbox}[colsep*=0ex,dp=2ex,center]{block alerted title}
+    \vskip0pt
+    \usebeamerfont{block title}\insertblocktitle
+    \vskip-1.25ex
+    \begin{beamercolorbox}[colsep=0.025ex]{block alerted separator}\end{beamercolorbox}
+  \end{beamercolorbox}
+  {\parskip0pt\par}
+  \setbeamerfont{block body}{size=\Large}
+  \usebeamerfont{block body}
+  \vskip-0.5ex
+  \begin{beamercolorbox}[colsep*=0ex]{block alerted body}
+  \justifying
+  \begin{adjustwidth}{1ex}{1ex}
+  \setlength{\parskip}{1ex}
+  \vskip-2ex
+}
+\setbeamertemplate{block alerted end}
+{
+  \end{adjustwidth}
+  \vskip1ex
+  \end{beamercolorbox}
+  \vskip0pt
+  \vspace*{2ex}
+}
+
+% Footer
+\newcommand{\footercontent}[1]{\newcommand{\insertfootercontent}{#1}}
+
+\setbeamertemplate{footline}{
+  \ifdefined\insertfootercontent
+  \begin{beamercolorbox}[vmode]{headline}
+    \ifbeamercolorempty[bg]{headline rule}{}{
+      \begin{beamercolorbox}[wd=\paperwidth,colsep=0.25ex]{headline rule}\end{beamercolorbox}
+    }
+    \vspace{1.0cm}
+    \hspace{0.05\paperwidth}
+    \usebeamerfont{footline}
+    \centering
+    \insertfootercontent
+    \hspace{0.05\paperwidth}
+    \vspace{1.0cm}
+  \end{beamercolorbox}
+  \else\fi
+}

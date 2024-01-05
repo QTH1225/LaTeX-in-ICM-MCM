@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\usepackage[bottom=1in, left=0.75in, right=0.75in, top=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{textcomp} % For the bullet point symbol
+\usepackage{lipsum}
+\usepackage{enumitem} % For customizing list items
+\usepackage{xcolor} % For text color
+\usepackage{natbib}
+\definecolor{mygray}{gray}{0.2}
+\setcitestyle{aysep={,}} % Set author-year separator to comma
+\usepackage{multicol}
+
+%\titlespacing*{<command>}{<left>}{<before-sep>}{<after-sep>}
+\titlespacing*{\paragraph}{10pt}{1ex}{0.01ex}
+\titlespacing*{\subsubsection}{0pt}{1ex}{0.01ex}
+
+
+% Define the journal name command
+\newcommand{\journalname}{Journal of Discoveries} % Set the journal name here
+\bibliographystyle{plainnat} % Use the plainnat style or another that you prefer
+% Define a bullet with some horizontal spacing
+\newcommand{\mybullet}{\textbullet\hspace{0.5em}}
+% Customize the section titles to be bold and have no numbering
+%\titleformat{\subsubsection*}
+%  {\normalfont\bfseries}{\thesection}{1em}{}
+
+% Removes numbering from sections
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+% No title, author, or date in the header
+% No title, author, or date in the header
+\noindent
+\begin{minipage}[t]{0.15\textwidth}
+\vspace*{-2.8cm} % Adjust the value as needed
+%\vspace{0pt} % Ensures that the top of the image aligns with the top of the text
+\includegraphics[width=\linewidth]{CUMT.png} % University logo
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+\vspace*{-2.2cm} % Adjust the value as needed
+%\vspace{35pt} % Ensures that the top of the text aligns with the top of the image
+{\color{black} Departments of Applied Psychics and Enginesteering\color{mygray}\small\newline 666 E Campus Drive \mybullet Stamford, CA, 94625 \mybullet USA}
+% Additional details here
+\end{minipage}
+
+% Add vertical space to position the horizontal line just below the picture minipage
+% Adjust this space as needed to align the line correctly
+\vspace{-0cm} % Example value, adjust as necessary
+
+\noindent\rule{\linewidth}{1.2pt} % Horizontal rule
+\bigskip
+% Opening salutation
+\noindent Dear [Editor(s)],
+
+\noindent Please find enclosed our manuscript entitled ``Lorem Ipsum Dolor: Consectetuer Adipiscing Elit" which we are submitting for consideration for publication in \textit{\journalname}.
+
+\subsubsection{}
+\noindent In recent years, it has become clear this line of research is necessary. \lipsum[1] 
+
+\subsubsection{}
+\noindent Our approach represents the first time a group has generated data that would allow exploration of a variety of questions. The most salient of which we explore here: 
+
+\subsubsection{}
+In our study, we present evidence that supports Model 1  over Model 2 , which is significant for several reasons:
+
+\begin{description}
+  \item[(1)] We observe Y, which aligns with groups A and B but not C in their model system. Notably, our model system is far more relevant for reasons including...
+  \item[(2)] We also comment on X, which has long been a mystery unsolved by any group but ours, thanks to our unique dataset.
+  \item[(3)] Finally, it is abundantly clear from our findings that competing labs have not considered...
+\end{description}
+
+% When you are ready for the second page, restore the geometry
+\subsubsection*{Summary of Scientific Grounds for Consideration at \journalname}
+\noindent Our is either groundbreaking and paradigm shifting or obvious. It promises to be cited in tenure dossiers for generations to come. This work is sure to bolster \textit{\journalname}'s impact factor which is really the most important thing. 
+
+\subsubsection*{Summary of Appeal to a Broad Audience}
+\noindent This manuscript is not just for the high-minded academics but also has quite appealing figures to just look at, or even frame and put on your wall.
+
+
+
+\subsubsection*{We suggest the following qualified reviewers}
+\begin{multicols}{2}
+\noindent Alex Harmon, Crescent Research Center\\
+Jordan Ellis, Northern Tech University\\
+Morgan Avery, Crescent Research Center\\
+Riley Jordan, Pinehill University\\ 
+Taylor Morgan, Oakwood University\\
+{\color{white} space \\}\\
+Jordan Parker, Eastwood Institute of Studies\\ 
+Charlie Hunter, Redwood Science Institute\\ Adrian Brooks, Northstar Research Institute\\
+Casey Blake, Emerald City University\\
+Dakota Lee, Pacific Northwest University\\
+\end{multicols}
+\vspace{-0.75cm}
+\subsubsection*{We advise against selecting the following conflicted reviewers}
+\noindent Sam Taylor, Greenfield Genome Center\\
+Alex Kennedy, BioFuture Labs
+
+\subsubsection{Items Included in This Submission}
+\noindent Included in this submission is an XXXX word main text with Y main figures and Z extended data figures. Our manuscript includes a Supplementary Information section that is so detailed, it could be another whole paper. We also enclosed a couple amazon gift card codes for the editors. 
+
+%\bibliographystyle{Science}
+\subsubsection{}
+Warmest Regards,
+\newline
+Author(s)
+%This is where your bibliography is generated. Make sure that your .bib file is actually called library.bib
+\bibliography{sample.bib}
+\end{document}

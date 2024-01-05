@@ -1,0 +1,21 @@
+@article{zany2023quantum,
+  title={Quantum Frogs on Moonbeams: A Leap Towards Model 1},
+  author={Zany, Zara Z. and Loopy, Larry L. and Quirky, Quinn Q.},
+  journal={Journal of Improbable Research},
+  volume={42},
+  number={1},
+  pages={101-109},
+  year={2018},
+  publisher={Ivy League Press}
+}
+
+@article{wacky2023spaghetti,
+  title={Spaghetti Entanglement: Twisting into Model 2},
+  author={Kuki, Wendy W. and Thorough, Kyle K. and Peculiar, Peter P.},
+  journal={Annals of Pseudoscientific Phenomena},
+  volume={13},
+  number={3},
+  pages={202-210},
+  year={2021},
+  publisher={Fringe Academia Inc.}
+}

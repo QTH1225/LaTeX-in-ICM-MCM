@@ -1,0 +1,22 @@
+\documentclass{article}
+% http://www.zedimage.com/pms-cmyk-hex.php
+% latex package spotcolor
+%\pdfminorversion=4
+%\pdfobjcompresslevel=0
+\usepackage[paperwidth=1in,paperheight=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\definecolor{UQpurple}{HTML}{51247A}
+\definecolor{lightpurple}{HTML}{962A8B}
+\pagestyle{empty}
+\begin{document}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.north west)
+      {\begin{tikzpicture}[remember picture,overlay]
+      \fill[lightpurple] (0,0) rectangle (\paperwidth,-\paperheight);
+        \fill[UQpurple,path fading=east] (0,0) rectangle (\paperwidth,-\paperheight);
+       \end{tikzpicture}
+      };
+  \end{tikzpicture}%
+\end{document}
