@@ -4,7 +4,7 @@
 
 <!-- 项目徽章 -->
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg)
+![License](https://img.shields.io/badge/license-LPPL%201.3c-blue.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
 ![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
@@ -20,6 +20,7 @@
    <tr> 
      <td><img alt="模板预览1" src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918655.webp"></td> 
      <td><img alt="模板预览2" src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918656.webp"></td> 
+     <td><img alt="模板预览3" src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212142108823.webp"></td> 
    <tr> 
    <tr> 
      <td><img alt="模板功能1" src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635350.png"></td> 
@@ -279,6 +280,7 @@ def calculate_sum(matrix):
 - **[Maki's Lab](https://www.maki-math.com/)** - 分享了丰富的LaTeX使用经验和技巧
 - **[Cai Hanlin(Lance)](https://caihanlin.com/)** - 分享了美赛的一些经验与建议
 - **[Levitate Qian](https://levitate-qian.github.io/)** - 个人技术博客作者，分享了丰富的LaTeX使用经验和技巧
+- [XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template): 提供了XJTLU会议海报的LaTeX模板，支持自定义内容和排版
 - **[B站-清风数学建模](https://space.bilibili.com/52614961?spm_id_from=333.337.0.0)** - 提供了数学算法、排版等新手教程，十分友好
 - **[B站-跟着浩然玩转高考物理](https://space.bilibili.com/384497590?spm_id_from=333.337.0.0)** - 分享了美赛的一些经验与得奖技巧
 - **[米醋电子工作室](https://www.micu.wiki/)** - 提供了一些AI编程的使用方法和技巧
@@ -292,16 +294,19 @@ def calculate_sum(matrix):
 
 ## 📄 许可证
 
-本项目采用 [知识共享署名-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0)。
+本项目采用 [LaTeX Project Public License 1.3c](https://www.latex-project.org/lppl/) (LPPL 1.3c)。
 
-**您可以自由地：**
-- **共享** — 在任何媒介以任何形式复制、发行本作品
-- **演绎** — 修改、转换或以本作品为基础进行创作
-- **商业使用** — 将本作品用于商业目的
+**LPPL许可证的主要特点：**
+- **修改自由** — 允许用户修改和分发修改后的版本
+- **维护状态** — 要求修改后的作品必须明确标识其与原始作品的关系
+- **文件完整性** — 确保LaTeX文件的完整性，避免不兼容的修改
+- **版本控制** — 支持版本管理，便于维护和更新
 
-**惟须遵守下列条件：**
-- **署名** — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否对原始作品作了修改
-- **相同方式共享** — 如果您再混合、转换或者基于本作品进行创作，您必须基于与原先许可协议相同的许可协议分发您贡献的作品
+**主要条款：**
+- 您可以自由使用、修改和分发本模板
+- 修改后的版本必须使用不同的文件名或版本号
+- 必须保留原始许可证声明和版权信息
+- 修改后的版本不能声称是原始作品的官方版本
 
 基于EasyMCM v5.1模板开发，遵循相应开源协议。
 ## Star History

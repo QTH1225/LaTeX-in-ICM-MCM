@@ -1,0 +1,584 @@
+The LaTeX Project Public License
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+LPPL Version 1.3c  2008-05-04
+
+Copyright 1999 2002-2008 LaTeX3 Project
+    Everyone is allowed to distribute verbatim copies of this
+    license document, but modification of it is not allowed.
+
+
+PREAMBLE
+========
+
+The LaTeX Project Public License (LPPL) is the primary license under which the
+LaTeX kernel and the base LaTeX packages are distributed.
+
+You may use this license for any work of which you hold the copyright and which
+you wish to distribute.  This license may be particularly suitable if your work
+is directly related to the LaTeX system (e.g., a LaTeX package), but it is
+written in such a way that you can use it even if your work is unrelated to
+LaTeX.
+
+The section `WHETHER AND HOW TO DISTRIBUTE WORKS UNDER THIS LICENSE', below,
+gives instructions, examples, and recommendations for authors who are
+considering distributing their works under this license.
+
+This license gives conditions under which a work may be distributed and
+modified, as well as conditions under which modified versions of that work may
+be distributed.
+
+We, the LaTeX3 Project, believe that the conditions below give you the freedom
+to make and distribute modified versions of your work that conform with
+whatever technical specifications you wish while maintaining the availability,
+integrity, and reliability of that work.  If you do not see how to achieve your
+goal while meeting these conditions, then read the document `cfgguide.tex' and
+`modguide.tex' in the base LaTeX distribution for suggestions.
+
+
+DEFINITIONS
+===========
+
+In this license document the following terms are used:
+
+   `Work'
+      Any work being distributed under this License.
+
+   `Derived Work'
+      Any work that under any applicable law is derived from the Work.
+
+   `Modification'
+      Any procedure that produces a Derived Work under any applicable law -- for
+e      example, the production of a file containing an original file associated
+      with the Work or a significant portion of such a file, either verbatim or
+      with modifications and/or translated into another language.
+
+   `Modify'
+      To apply any procedure that produces a Derived Work under any applicable
+      law.
+
+   `Distribution'
+      Making copies of the Work available to the public by any means.
+      Including, but not limited to, downloading from or placing on a network
+      server, or making available on a data storage medium.
+
+   `Compiled Work'
+      A version of the Work that has been processed into a form where it is
+      directly usable on a computer system.  This processing may include using
+      installation facilities provided by the Work, transformations performed by
+      a LaTeX installation process, or by a third-party processor.
+
+   `Current Maintainer'
+      A person or persons nominated as such within the Work.  If there is no
+      such explicit nomination then it is the `Copyright Holder' under any
+      applicable law.
+
+   `Base Interpreter'
+      A program or process that is normally needed for running or interpreting
+      a part of the Work.
+
+      A Base Interpreter may depend on external components but these are not
+      considered part of the Base Interpreter provided that each external
+      component clearly identifies itself whenever it is used interactively.
+      Unless explicitly specified when applying the license to the Work, the
+      only applicable Base Interpreter is a `LaTeX-Format' or in the case of
+      files belonging to the `LaTeX-Format' a program implementing the
+      `TeX language'.
+
+
+CONDITIONS ON DISTRIBUTION AND MODIFICATION
+===========================================
+
+1.  You may distribute a complete, unmodified copy of the Work as you received
+    it.  Distribution of only part of the Work is considered modification of
+    the Work, and no right to distribute such a Derived Work may be assumed
+    under the terms of this clause.
+
+2.  You may distribute a Compiled Work that has been generated from a complete,
+    unmodified copy of the Work as distributed under Clause 1 above, as long as
+    that Compiled Work is distributed in such a way that the recipients may
+    install the Compiled Work on their system exactly as it would have been
+    installed if they generated a Compiled Work from the Work.
+
+3.  You may modify your copy of the Work, thus creating a Derived Work.  You
+    may also distribute such Derived Works as defined in clause 4, provided
+    that you also meet all of the following conditions:
+
+    a.  If you modify a file of the Work, you must cause all modified files to
+        carry prominent notices so that any recipient will know that they are
+        not receiving the original file.
+
+    b.  You must cause any Derived Work that you distribute to be licensed as a
+        whole at no charge to all third parties under the terms of this
+        License, with the exception of Compiled Works that meet the conditions
+        of clause 2 above.  This condition does not require any part of a
+        Derived Work that is a Compiled Work to be made available in any source
+        code form.
+
+    c.  If the Work has a `LaTeX-Format' identification string then you must
+        not remove or alter that identification string in any source code file
+        you distribute, except that you may alter the identification string if
+        your modification constitutes a `Maintained' modification as described
+        in clause 5, and you meet the conditions set out in clause 5.
+
+4.  You may distribute a Derived Work provided that you are in compliance with
+    the above clauses 1 to 3.
+
+5.  A modification is a `Maintained' modification only if there is a Current
+    Maintainer of the Work, and that person or persons releases an updated
+    version of the Work that is intended to supersede all previous versions
+    and to which the modification has been contributed.  In this case the
+    Current Maintainer may allow you to alter the identification string to
+    indicate that your file is based on the updated version.
+
+6.  The conditions above are not intended to prohibit, and hence do not apply
+to, the modification, by any method, of any component so that it becomes
+identical to an updated version of that component as distributed by the Current
+Maintainer under Clause 1.
+
+7.  If a Derived Work contains any file that is not a direct modification of a
+    file in the Work, then you may additionally distribute that file under any
+    license you choose, provided that you also meet all of the following
+    conditions:
+
+    a.  The license you choose must not contradict the intent or purpose of any
+        part of this License.
+
+    b.  You must cause any such file to carry prominent notices so that any
+        recipient will know that the file is not part of the Work.
+
+    c.  You must license any such file as a whole at no charge to all third
+        parties under the terms of the license you choose.
+
+8.  This license does not grant any right to use any trademark, service mark,
+    tradename, or logo of the Copyright Holder or the LaTeX3 Project except as
+    is necessary to comply with clause 3c.
+
+9.  If any part of this License is found to be in conflict with the
+    applicable law then that part shall be interpreted in a fashion that
+    comes as close as possible to reflecting the original intent, while
+    remaining in compliance with the applicable law.  The remaining parts
+    will remain in full force and effect.
+
+
+WHETHER AND HOW TO DISTRIBUTE WORKS UNDER THIS LICENSE
+======================================================
+
+This section contains important instructions, examples, and recommendations for
+authors who are considering distributing their works under this license.
+
+If you want to distribute your own work under this license, you must indicate
+in your work that it is to be distributed under the terms of this license.  We
+recommend that you do this by putting the following in your work:
+
+  %% LPPL Version 1.3c  2008-05-04
+  %% Copyright (c) <year> <your name>
+  %%
+  %% This work may be distributed and/or modified under the
+  %% conditions of the LaTeX Project Public License, either version 1.3
+  %% of this license or (at your option) any later version.
+  %% The latest version of this license is in
+  %%   http://www.latex-project.org/lppl.txt
+  %% and version 1.3c or later is part of all distributions of LaTeX
+  %% version 2006/05/20 or later.
+
+You should also include a copy of the license (or a reference to where it can
+be found) with your work.  If your work is intended to be used with LaTeX, then
+we recommend that you also include the following statement:
+
+  %% This work has the LPPL maintenance status `maintained'.
+  %%
+  %% The Current Maintainer of this work is <your name>.
+
+If your work is not intended to be used with LaTeX, then you may omit the
+above statement.
+
+If your work is a LaTeX package, then you should also include the following
+statement:
+
+  %% This work consists of the files <list of files>.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to be the Current Maintainer, then you should also include the
+following statement:
+
+  %% This work has the LPPL maintenance status `author-maintained'.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow modifications (other than those allowed by clause 6),
+then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen'.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow any modifications at all, then you should also
+include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clause 6 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the creation of Derived Works, then you should also
+include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clause 3 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of Derived Works, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clause 4 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of Compiled Works, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clause 2 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 2, 3, and 4 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 2, 3, 4, and 6 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, then you should also
+include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, and 6 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, then you should also include the
+following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, then you should also include the
+following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, then you
+should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, then you should also include the following
+statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, and you do not want to allow the use of
+the Work in any way that would require the payment of any other consideration,
+then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, and you do not want to allow the use of
+the Work in any way that would require the payment of any other consideration,
+and you do not want to allow the use of the Work in any way that would require
+the payment of any other consideration, then you should also include the
+following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, and you do not want to allow the use of
+the Work in any way that would require the payment of any other consideration,
+and you do not want to allow the use of the Work in any way that would require
+the payment of any other consideration, and you do not want to allow the use
+of the Work in any way that would require the payment of any other
+consideration, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, and you do not want to allow the use of
+the Work in any way that would require the payment of any other consideration,
+and you do not want to allow the use of the Work in any way that would require
+the payment of any other consideration, and you do not want to allow the use
+of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, then you should
+also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, and you do not want to allow the use of the Work in any
+way that would require the payment of any other consideration, and you do not
+want to allow the use of the Work in any way that would require the payment of
+any other consideration, and you do not want to allow the use of the Work in
+any way that would require the payment of any other consideration, and you do
+not want to allow the use of the Work in any way that would require the
+payment of any other consideration, and you do not want to allow the use of
+the Work in any way that would require the payment of any other consideration,
+and you do not want to allow the use of the Work in any way that would require
+the payment of any other consideration, and you do not want to allow the use
+of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration, then you should also include the following statement:
+
+  %% This work has the LPPL maintenance status `frozen' and is
+  %% not subject to the provisions of clauses 1, 2, 3, 4, 6, and 8 of the LPPL.
+
+If you want your work to be distributed under the terms of this license, but
+you do not want to allow the distribution of any Derived Works or Compiled
+Works, and you do not want to allow any modifications at all, and you do not
+want to allow the distribution of the Work itself, and you do not want to
+allow the use of the Work in any way, and you do not want to allow the use of
+any trademark, service mark, tradename, or logo of the Copyright Holder or the
+LaTeX3 Project, and you do not want to allow the use of the Work in any way
+that would require the payment of royalties, and you do not want to allow the
+use of the Work in any way that would require the payment of any other
+consideration, and you do not want to allow the use of the Work in any way
+that would require the payment of any other consideration, and you do not want
+to allow the use of the Work in any way that would require the payment of any
+other consideration
