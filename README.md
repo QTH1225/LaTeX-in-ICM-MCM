@@ -8,7 +8,7 @@
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
 ![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
-![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?color=blue&label=Downloads)
+![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?color=blue&label=Downloads&cacheSeconds=3600)
 
 </div>
 
