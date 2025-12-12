@@ -1,6 +1,6 @@
 <div align="center">
 
-# $\LaTeX$-in-ICM&MCM：简单全面的美赛$\LaTeX$ 模板
+# $\LaTeX$-in-ICM&MCM：简单全面的美赛LaTeX模板
 
 <!-- 项目徽章 -->
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
