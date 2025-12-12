@@ -2,6 +2,14 @@
 
 # $\LaTeX$-in-ICM&MCM：简单全面的美赛$\LaTeX$模板
 
+<!-- 项目徽章 -->
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-green.svg)
+![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
+![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
+![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
+![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?color=blue&label=Downloads)
+
 </div>
 
 一个专为美国大学生数学建模竞赛（MCM/ICM）设计的LaTeX模板库，基于EasyMCM模板进行了深度优化和功能增强，提供完整的论文写作解决方案。本项目在我的[博客](https://qintianhao.com/)同步进行发布。
@@ -9,21 +17,14 @@
 <div align="center">
 <!-- 两张webp格式图片在最上面，并排显示 -->
 <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918655.webp" alt="模板预览1" style="max-width: 45%; height: auto;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918656.webp" alt="模板预览2" style="max-width: 45%; height: auto;">
+    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918655.webp" alt="模板预览1" style="max-width: 45%; height: auto;">    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111918656.webp" alt="模板预览2" style="max-width: 45%; height: auto;">
 </div>
-
 <!-- 其余PNG图片在下面，三张并排显示 -->
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635350.png" alt="模板功能1" style="max-width: 30%; height: auto;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635351.png" alt="模板功能2" style="max-width: 30%; height: auto;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635352.png" alt="模板功能3" style="max-width: 30%; height: auto;">
+    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635350.png" alt="模板功能1" style="max-width: 30%; height: auto;">    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635351.png" alt="模板功能2" style="max-width: 30%; height: auto;">    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635352.png" alt="模板功能3" style="max-width: 30%; height: auto;">
 </div>
-
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635353.png" alt="模板功能4" style="max-width: 30%; height: auto;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635354.png" alt="模板功能5" style="max-width: 30%; height: auto;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635355.png" alt="模板功能6" style="max-width: 30%; height: auto;">
+    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635353.png" alt="模板功能4" style="max-width: 30%; height: auto;">    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635354.png" alt="模板功能5" style="max-width: 30%; height: auto;">    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212111635355.png" alt="模板功能6" style="max-width: 30%; height: auto;">
 </div>
 
 </div>
@@ -284,6 +285,17 @@ def calculate_sum(matrix):
 4. **添加美赛资源**：如果有相关的美赛资源（如模板、代码示例等），欢迎添加
 
 ## 📄 许可证
+
+本项目采用 [知识共享署名-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0)。
+
+**您可以自由地：**
+- **共享** — 在任何媒介以任何形式复制、发行本作品
+- **演绎** — 修改、转换或以本作品为基础进行创作
+- **商业使用** — 将本作品用于商业目的
+
+**惟须遵守下列条件：**
+- **署名** — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否对原始作品作了修改
+- **相同方式共享** — 如果您再混合、转换或者基于本作品进行创作，您必须基于与原先许可协议相同的许可协议分发您贡献的作品
 
 基于EasyMCM v5.1模板开发，遵循相应开源协议。
 ## Star History
