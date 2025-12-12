@@ -321,10 +321,11 @@ def calculate_sum(matrix):
 
 我想说的是，一直致力于打数模竞赛很好，打一两次觉得不适合自己放弃了也没事。最重要的是不能因为打数模竞赛的结果而放弃学习，放弃接受新知识。
 
-<figure style="text-align: center; margin: 2rem auto; display: flex; flex-direction: column; align-items: center;">
-    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212150213361.webp" alt="凌晨在学院楼写完论文所拍摄" style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
-    <figcaption style="color: #666; font-style: italic; margin-top: 1rem; text-align: center; width: 100%;">凌晨在学院楼写完论文所拍摄</figcaption>
-</figure>
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212150213361.webp" alt="凌晨在学院楼写完论文所拍摄" style="max-width: 80%; height: auto;">
+
+*凌晨在学院楼写完论文所拍摄*
+</div>
 
 ## Star History
 如果您觉得本项目对您有帮助，欢迎给我一个star⭐，谢谢！
