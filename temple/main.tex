@@ -68,7 +68,32 @@
   listing options = {%
    style = Matlab-editor,
    numbers = left,
-   numberstyle = \footnotesize\color{darkgray}
+   numberstyle = \footnotesize\color{darkgray}\fontfamily{pcr}\selectfont,
+   basicstyle = \footnotesize\fontfamily{pcr}\selectfont,
+   breaklines = true,  % 启用自动换行
+   breakatwhitespace = true,  % 在空格处换行
+   postbreak = \mbox{\textcolor{gray}{$\hookrightarrow$}\space}  % 换行指示符
+  },
+  overlay = {\begin{tcbclipinterior}\fill[blue!15!white] (frame.south west) rectangle ([xshift=5.3mm]frame.north west);\end{tcbclipinterior}},
+  example = {#2}{#3}, #1,
+ }
+ 
+ % Python代码盒子定义 - 与MATLAB配色统一
+ \newtcblisting[auto counter, number within = section, list inside = pcode]{python}[3][]{%
+  listing options = {%
+   language = Python,
+   numbers = left,
+   numberstyle = \footnotesize\color{darkgray}\fontfamily{pcr}\selectfont,
+   basicstyle = \footnotesize\fontfamily{pcr}\selectfont,
+   keywordstyle = \color{darkblue}\bfseries,
+   commentstyle = \color{darkgreen},
+   stringstyle = \color{red!60},
+   showstringspaces = false,
+   emphstyle = \color{orange!60},
+   emph = {self, cls, True, False, None},
+   breaklines = true,  % 启用自动换行
+   breakatwhitespace = true,  % 在空格处换行
+   postbreak = \mbox{\textcolor{gray}{$\hookrightarrow$}\space}  % 换行指示符
   },
   overlay = {\begin{tcbclipinterior}\fill[blue!15!white] (frame.south west) rectangle ([xshift=5.3mm]frame.north west);\end{tcbclipinterior}},
   example = {#2}{#3}, #1,
@@ -108,7 +133,6 @@
 %\input{Memo.tex}
 \newpage
 \input{part_4_Appendix}
-
 
 
 

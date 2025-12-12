@@ -7,18 +7,27 @@
 \contentsline {subsection}{\numberline {4.1}Data Overview}{4}{subsection.0.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Data Collection}{4}{subsubsection.0.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}Data Screening}{5}{subsubsection.0.4.1.2}%
-\contentsline {section}{\numberline {5}Layout of Formulas, Graphs and Tables}{5}{section.0.5}%
-\contentsline {subsection}{\numberline {5.1}Layout of Formulas}{5}{subsection.0.5.1}%
-\contentsline {subsection}{\numberline {5.2}Layout of Figures}{6}{subsection.0.5.2}%
-\contentsline {subsection}{\numberline {5.3}Layout of Special Tables}{7}{subsection.0.5.3}%
-\contentsline {section}{\numberline {6}Conclusions and Interesting Information}{7}{section.0.6}%
-\contentsline {subsection}{\numberline {6.1}Useful and Meaningful Conclusions}{7}{subsection.0.6.1}%
-\contentsline {section}{\numberline {7}Sensitivity Analysis}{7}{section.0.7}%
-\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{8}{section.0.8}%
-\contentsline {subsection}{\numberline {8.1}Strengths}{8}{subsection.0.8.1}%
-\contentsline {subsection}{\numberline {8.2}Weaknesses $\&$Further Discussion}{8}{subsection.0.8.2}%
-\contentsline {section}{\numberline {9}Conclusion}{8}{section.0.9}%
-\contentsline {section}{References}{9}{section.0.10}%
-\contentsline {section}{\numberline {A}First Section}{9}{appendix.A}%
-\contentsline {section}{\numberline {B}CODE}{10}{appendix.B}%
+\contentsline {subsection}{\numberline {4.2}Detailed Parameter Analysis}{5}{subsection.0.4.2}%
+\contentsline {section}{\numberline {5}Layout of Formulas, Graphs and Tables}{7}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Layout of Formulas}{7}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Layout of Figures}{8}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {5.3}Layout of Special Tables}{9}{subsection.0.5.3}%
+\contentsline {section}{\numberline {6}Conclusions and Interesting Information}{9}{section.0.6}%
+\contentsline {subsection}{\numberline {6.1}Useful and Meaningful Conclusions}{9}{subsection.0.6.1}%
+\contentsline {section}{\numberline {7}Sensitivity Analysis}{9}{section.0.7}%
+\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{10}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Strengths}{10}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}Weaknesses $\&$Further Discussion}{10}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Conclusion}{10}{section.0.9}%
+\contentsline {section}{References}{11}{section.0.10}%
+\contentsline {section}{\numberline {A}First Section}{11}{appendix.A}%
+\contentsline {section}{\numberline {B}Python Code Examples}{12}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Basic Python Example}{12}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Data Analysis with Python}{12}{subsection.B.2}%
+\contentsline {section}{\numberline {C}Use of AI}{13}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Model Development Assistance}{13}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Data Processing and Analysis}{13}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Mathematical Formulation Assistance}{14}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}Code Implementation Support}{14}{subsection.C.4}%
+\contentsline {subsection}{\numberline {C.5}Conclusion on AI Usage}{15}{subsection.C.5}%
 \contentsfinish 
