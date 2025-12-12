@@ -41,6 +41,12 @@
 - 常用的LaTeX宏包（如`amsmath`, `graphicx`, `hyperref`等）
 - 如何编译LaTeX文档（如使用`pdflatex`, `xelatex`, `lualatex`等）
 如果你没有LaTeX环境，建议使用Overleaf等在线平台进行编译。
+
+另外你需要了解如何处理出现的报错，一般来说可以使用以下几种方法：
+- Ask The F~~u~~...riendly Web(ATFW，问友好的网络)
+- Read The F~~u~~...ine Web(RTFM，读好的的手册)
+- Ask The F~~u~~...oolish AI(ATFAI，问智能的AI)
+
 ## 📁 项目结构
 
 ```
@@ -309,6 +315,17 @@ def calculate_sum(matrix):
 - 修改后的版本不能声称是原始作品的官方版本
 
 基于EasyMCM v5.1模板开发，遵循相应开源协议。
+
+## 作者寄语
+作者从大一开始作为论文手参与数模竞赛，在四年时间中论文类比赛参加了十几场，累计写过的字数约有15w左右。在2022、2023年参加了3次美赛全是S奖，但是我也一直没有放弃学习，所以美赛的经验也为我后来其他竞赛提供了不少帮助。
+
+我想说的是，一直致力于打数模竞赛很好，打一两次觉得不适合自己放弃了也没事。最重要的是不能因为打数模竞赛的结果而放弃学习，放弃接受新知识。
+
+<figure style="text-align: center; margin: 2rem auto; display: flex; flex-direction: column; align-items: center;">
+    <img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251212150213361.webp" alt="凌晨在学院楼写完论文所拍摄" style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+    <figcaption style="color: #666; font-style: italic; margin-top: 1rem; text-align: center; width: 100%;">凌晨在学院楼写完论文所拍摄</figcaption>
+</figure>
+
 ## Star History
 如果您觉得本项目对您有帮助，欢迎给我一个star⭐，谢谢！
 [![Star History Chart](https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=timeline&legend=bottom-right)](https://www.star-history.com/#QTH1225/LaTeX-in-ICM-MCM&type=timeline&legend=bottom-right)
