@@ -43,9 +43,9 @@
 如果你没有LaTeX环境，建议使用Overleaf等在线平台进行编译。
 
 另外你需要了解如何处理出现的报错，一般来说可以使用以下几种方法：
-- Ask The F~~u~~...riendly Web(ATFW，问友好的网络)
-- Read The F~~u~~...ine Web(RTFM，读好的的手册)
-- Ask The F~~u~~...oolish AI(ATFAI，问智能的AI)
+- Ask The F~~ucking~~...riendly Web(ATFW，问友好的网络)
+- Read The F~~ucking~~...ine Web(RTFM，读好的的手册)
+- Ask The F~~ucking~~...oolish AI(ATFAI，问智能的AI)
 
 ## 📁 项目结构
 
