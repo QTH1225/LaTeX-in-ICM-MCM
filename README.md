@@ -44,7 +44,7 @@
 
 另外你需要了解如何处理出现的报错，一般来说可以使用以下几种方法：
 - Ask The F~~ucking~~...riendly Web(ATFW，问友好的网络)
-- Read The F~~ucking~~...ine Web(RTFM，读好的的手册)
+- Read The F~~ucking~~...ine Manual(RTFM，读好的的手册)
 - Ask The F~~ucking~~...oolish AI(ATFAI，问智能的AI)
 
 ## 📁 项目结构
@@ -286,7 +286,7 @@ def calculate_sum(matrix):
 - **[Maki's Lab](https://www.maki-math.com/)** - 分享了丰富的LaTeX使用经验和技巧
 - **[Cai Hanlin(Lance)](https://caihanlin.com/)** - 分享了美赛的一些经验与建议
 - **[Levitate Qian](https://levitate-qian.github.io/)** - 个人技术博客作者，分享了丰富的LaTeX使用经验和技巧
-- [XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template): 提供了XJTLU会议海报的LaTeX模板，支持自定义内容和排版
+- **[XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template)** - 提供了XJTLU会议海报的LaTeX模板，支持自定义内容和排版
 - **[B站-清风数学建模](https://space.bilibili.com/52614961?spm_id_from=333.337.0.0)** - 提供了数学算法、排版等新手教程，十分友好
 - **[B站-跟着浩然玩转高考物理](https://space.bilibili.com/384497590?spm_id_from=333.337.0.0)** - 分享了美赛的一些经验与得奖技巧
 - **[米醋电子工作室](https://www.micu.wiki/)** - 提供了一些AI编程的使用方法和技巧
@@ -329,4 +329,8 @@ def calculate_sum(matrix):
 
 ## Star History
 如果您觉得本项目对您有帮助，欢迎给我一个star⭐，谢谢！
-[![Star History Chart](https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=timeline&legend=bottom-right)](https://www.star-history.com/#QTH1225/LaTeX-in-ICM-MCM&type=timeline&legend=bottom-right)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
+  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
+</picture>
