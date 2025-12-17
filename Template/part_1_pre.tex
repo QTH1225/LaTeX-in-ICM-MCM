@@ -6,10 +6,19 @@
 %---------------------------------子图的排版与语法
 \begin{figure}[htbp]
     \centering    
-    \subfigure[Subfigure Name1Long LongLong LongLong LongLong Long(left)]{				% 图片1([]内为子图标题)						
-    \includegraphics[width=0.45\textwidth]{test_1.jpg}}			  % 子图1的图片宽度 不能空行
-    \subfigure[Subfigure Name2(right)]{				% 图片2,其中width代表图片宽度,可以调整
-    \includegraphics[width=0.45\textwidth]{test_2.jpg}} %注意此处的文件格式为.jpg
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test_1.jpg}
+        \captionsetup{justification=centering}
+        \caption{Subfigure Name1Long LongLong LongLong LongLong Long(left)}
+    \end{subfigure}
+    \hspace{0.02\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test_2.jpg}
+        \captionsetup{justification=centering}
+        \caption{Subfigure Name2(right)}
+    \end{subfigure}
 	\caption{Figure Name} % 图片标题 
 \end{figure}
 \vspace{-1cm} %下文向下空-1cm
@@ -132,10 +141,19 @@ And other data sources are shown in \Cref{tb:data_source}.
 According to the data given, we...
 \begin{figure}[htbp]
     \centering    
-    \subfigure[Cute Cat(left)]{									
-    \includegraphics[width=0.45\textwidth]{catsquare.jpeg}}			 
-    \subfigure[Cute Cat(right)]{				
-    \includegraphics[width=0.45\textwidth]{catsquare.jpeg}} %此时两张图片的大小不一样就需要改width参数
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{catsquare.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Cute Cat(left)}
+    \end{subfigure}
+    \hspace{0.02\textwidth}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{catsquare.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Cute Cat(right)}
+    \end{subfigure}
 	\caption{Data Screening}  
 \end{figure}
 \vspace{-1cm}

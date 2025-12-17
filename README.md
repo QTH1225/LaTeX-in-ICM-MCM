@@ -38,11 +38,12 @@
 
 </div>
 
-在使用本模板前，你至少应该对LaTeX有一定的了解而不是仅仅为了参加美赛而突然放弃Word，你所应该了解的包括但不限于：
-- 基本的LaTeX语法
-- 常用的LaTeX宏包（如`amsmath`, `graphicx`, `hyperref`等）
-- 如何编译LaTeX文档（如使用`pdflatex`, `xelatex`, `lualatex`等）
-如果你没有LaTeX环境，建议使用Overleaf等在线平台进行编译。
+> [!CAUTION]
+>  在使用本模板前，你至少应该对LaTeX有一定的了解而不是仅仅为了参加美赛而突然放弃Word，你所应该了解的包括但不限于：
+>- 基本的LaTeX语法、LaTeX 文档结构与符号
+>- 常用的LaTeX宏包（如`amsmath`, `graphicx`, `hyperref`等）
+>- 如何编译LaTeX文档（如使用`pdflatex`, `xelatex`, `lualatex`等）
+如果你没有LaTeX环境，建议使用**Overleaf**或者**Loongtex**等在线平台进行编译。
 
 另外你需要了解如何处理出现的报错，一般来说可以使用以下几种方法：
 - Ask The F~~ucking~~...riendly Web(ATFW，问友好的网络)
@@ -311,8 +312,8 @@ LaTeX-in-ICM-MCM/
 
 </details>
 
-#### 2.4 配置代码片段（可选）
-创建LaTeX代码片段，按 `Ctrl+Shift+P`，输入 `Preferences: Configure User Snippets`，选择 `latex.json`：
+#### 2.4 配置代码片段（可选，自行配置）
+创建LaTeX代码片段，按 `Ctrl+Shift+P`，输入 `Preferences: Configure User Snippets`，选择 `latex.json`，此处为一个示例。
 
 ```json
 {
@@ -477,7 +478,9 @@ def calculate_sum(matrix):
 #### LaTeX学习资源
 - [华东师范大学LaTeX资源](https://math.ecnu.edu.cn/~jypan/Latex/index.html) - LaTeX学习资源集合，包含教程和模板
 - [LaTeX2e教程](https://www.latex-project.org/news/latex2e-news/) - LaTeX2e官方教程，详细介绍LaTeX的相关使用方法
-
+- [Overleaf 30分钟LaTeX教程](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) - 快速入门LaTeX的官方教程，适合初学者
+- [正确写作美国大学生数学建模竞赛论文](https://zh.z-library.sk/book/117304968/32dc10/%E6%AD%A3%E7%A1%AE%E5%86%99%E4%BD%9C%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AE%BA%E6%96%87.html) - 美赛论文写作指南，包含格式规范和注意事项
+- [LaTeX数学符号速查表](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) - 完整的LaTeX数学符号参考手册，方便查找特殊符号
 ### 📊 数据处理与分析工具
 #### 统计分析工具
 - [SPSSPRO](https://www.spsspro.com/) - 在线统计分析平台，提供专业的统计分析功能
@@ -499,6 +502,8 @@ def calculate_sum(matrix):
 
 #### AI工具配置
 - [ZCF项目](https://github.com/UfoMiao/zcf) - 一键式配置Claude Code，无需复杂设置
+- [Claudia AI助手](https://getclaudia.org/) - 有力的Claude Code GUI界面
+- [Claude Code切换工具](https://github.com/farion1231/cc-switch) - 用于切换Claude Code模型的GitHub项目，方便管理不同版本
 - [Metaso](https://metaso.cn/) - AI搜索工具，智能信息检索和整理
 - [Labnana](https://labnana.com/zh) - 扩展图或者文生图的模型，需要签到赚取积分
 - [Banana Prompt Quicker](https://glidea.github.io/banana-prompt-quicker/) - 提示词优化工具，提升AI对话效果

@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.0.1}%
 \contentsline {subsection}{\numberline {1.1}Problem Background}{3}{subsection.0.1.1}%
 \contentsline {subsection}{\numberline {1.2}Restatement of the Problem}{3}{subsection.0.1.2}%
-\contentsline {section}{\numberline {2}Assumptions and Explanations}{3}{section.0.2}%
+\contentsline {section}{\numberline {2}Assumptions and Explanations}{4}{section.0.2}%
 \contentsline {section}{\numberline {3}Notations}{4}{section.0.3}%
 \contentsline {section}{\numberline {4}Model Preparation}{4}{section.0.4}%
 \contentsline {subsection}{\numberline {4.1}Data Overview}{4}{subsection.0.4.1}%

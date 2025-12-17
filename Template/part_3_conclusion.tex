@@ -17,13 +17,33 @@
 
 \begin{figure}[H]
     \centering
-    \subfigure[Sensitivity Analysis of Parameter α]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
-    \hspace{0.5cm}
-    \subfigure[Sensitivity Analysis of Parameter β]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
-    \\
-    \subfigure[Sensitivity Analysis of Parameter γ]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
-    \hspace{0.5cm}
-    \subfigure[Sensitivity Analysis of Parameter δ]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/cat.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Sensitivity Analysis of Parameter α}
+    \end{subfigure}
+    \hspace{0.02\linewidth}
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/cat.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Sensitivity Analysis of Parameter β}
+    \end{subfigure}
+    \\[0.5cm]
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/cat.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Sensitivity Analysis of Parameter γ}
+    \end{subfigure}
+    \hspace{0.02\linewidth}
+    \begin{subfigure}[t]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{img/cat.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Sensitivity Analysis of Parameter δ}
+    \end{subfigure}
     \caption{Visualization of Sensitivity Analysis Results}
     \label{fig:sensitivity_analysis}
 \end{figure}
@@ -32,14 +52,14 @@ Through the four subfigures above, we can clearly observe the sensitivity impact
 
 \begin{figure}[H] %[H]让图片在文章中的位置就是这段代码的位置
 	\centering
-		\begin{minipage}[t]{0.45\linewidth} %并排排列图片使用\minipage{}环境,而子图排列使用\subfigure{}环境
+		\begin{minipage}[t]{0.5\textwidth} %并排排列图片使用\minipage{}环境,而子图排列使用\subfigure{}环境
 			\centering
-			\includegraphics[width=0.9\linewidth]{catsquare.jpeg}
+			\includegraphics[width=0.9\textwidth]{catsquare.jpeg}
             \captionsetup{justification=centering} \caption{Left Figure}
 		\end{minipage}%
-		\begin{minipage}[t]{0.45\linewidth}
+		\begin{minipage}[t]{0.5\textwidth}
 			\centering
-			\includegraphics[width = 0.9\linewidth]{catsquare.jpeg}
+			\includegraphics[width = 0.9\textwidth]{catsquare.jpeg}
 			\captionsetup{justification=centering} \caption{Middle Figure}
 		\end{minipage}%
     \vspace{-0.5cm}

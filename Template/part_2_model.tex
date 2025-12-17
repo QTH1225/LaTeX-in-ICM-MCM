@@ -42,32 +42,46 @@ We can use the following codes to describe a part of calculation.
 A description of the formula\dots.The \Cref{eq:cov} is important.
 \subsection{Layout of Figures}
 \begin{figure}[H]
-    \centering   %使用\subfigure环境排版三张图也是可以的,但是需要调整图宽度 
-    \subfigure[Subfigure1]{				% 图片1([]内为子图标题)						
-    \includegraphics[width=0.31\textwidth]{catsquare.jpeg}}			  % 子图1的图片宽度 不能空行
-    \subfigure[Subfigure2]{				% 图片2
-    \includegraphics[width=0.31\textwidth]{catsquare.jpeg}} 
-    \subfigure[Subfigure3]{				% 图片2
-    \includegraphics[width=0.31\textwidth]{catsquare.jpeg}} 
+    \centering   %使用subfigure环境排版三张图也是可以的,但是需要调整图宽度 
+    \begin{subfigure}[t]{0.31\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{catsquare.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Subfigure1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.31\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{catsquare.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Subfigure2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.31\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{catsquare.jpeg}
+        \captionsetup{justification=centering}
+        \caption{Subfigure3}
+    \end{subfigure}
 	\caption{Subfigures} % 图片标题 
 \end{figure}
 \vspace{-0.5cm}
 
 \begin{figure}[H] %[H]让图片在文章中的位置就是这段代码的位置
 	\centering
-		\begin{minipage}[t]{0.3\linewidth} %并排排列图片使用\minipage{}环境,而子图排列使用\subfigure{}环境
+		\begin{minipage}[t]{0.32\textwidth} %并排排列图片使用\minipage{}环境,而子图排列使用\subfigure{}环境
 			\centering
-			\includegraphics[width=0.9\linewidth]{catsquare.jpeg}
+			\includegraphics[width=0.9\textwidth]{catsquare.jpeg}
             \captionsetup{justification=centering} \caption{Left Figure}
 		\end{minipage}%
-		\begin{minipage}[t]{0.3\linewidth}
+		\begin{minipage}[t]{0.32\textwidth}
 			\centering
-			\includegraphics[width = 0.9\linewidth]{catsquare.jpeg}
+			\includegraphics[width = 0.9\textwidth]{catsquare.jpeg}
 			\captionsetup{justification=centering} \caption{Middle Figure}
 		\end{minipage}%
-        \begin{minipage}[t]{0.3\linewidth}
+        \begin{minipage}[t]{0.32\textwidth}
 			\centering
-			\includegraphics[width = 0.9\linewidth]{catsquare.jpeg}
+			\includegraphics[width = 0.9\textwidth]{catsquare.jpeg}
 			\captionsetup{justification=centering} \caption{Right Figure}
 		\end{minipage}%
     \vspace{-0.5cm}
