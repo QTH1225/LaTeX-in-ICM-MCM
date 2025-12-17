@@ -2,20 +2,20 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 创建示例数据
+# Create sample data
 data = {
     'x': np.linspace(0, 10, 100),
     'y': np.sin(np.linspace(0, 10, 100))
 }
 df = pd.DataFrame(data)
 
-# 数据分析和可视化
-print("数据统计信息:")
+# Data analysis and visualization
+print("Data statistics:")
 print(df.describe())
 
 plt.figure(figsize=(10, 6))
 plt.plot(df['x'], df['y'], 'b-', linewidth=2)
-plt.title('正弦函数图像')
+plt.title('Sine Function Plot')
 plt.xlabel('x')
 plt.ylabel('sin(x)')
 plt.grid(True)

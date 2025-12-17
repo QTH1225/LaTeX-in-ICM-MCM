@@ -14,6 +14,8 @@
 
 一个专为美国大学生数学建模竞赛（MCM/ICM）设计的LaTeX模板库，基于EasyMCM模板进行了深度优化和功能增强，提供完整的论文写作解决方案。本项目在我的[博客](https://qintianhao.com/)同步进行发布。
 
+此外，本项目整理了大量论文写作、绘图以及编程中可能用到的资源，在[其他资源（必看）](#其他资源必看)章节中详细列出。 
+
 <div align="center">
 
 <table> 
@@ -106,11 +108,238 @@ LaTeX-in-ICM-MCM/
 ### 1. 环境要求
 - **LaTeX发行版**：推荐TeX Live 2023+ 或 MiKTeX 22.0+
 - **编译引擎**：必须使用XeLaTeX（支持中文和Unicode）
-- **额外依赖**：需要安装`minted`包（用于代码高亮）
+- **额外依赖**：可能需要安装`minted`包（用于代码高亮）
 
-### 2. 使用步骤
+### 2. VSCode配置LaTeX环境（推荐）
+
+#### 2.1 安装LaTeX编译内核
+**Windows系统推荐安装TeX Live：**
+1. 访问 [TeX Live官网](https://www.tug.org/texlive/) 下载安装包
+2. 运行安装程序，选择完整安装（约4GB）
+3. 安装完成后，在命令行验证：
+   ```bash
+   tex --version
+   xelatex --version
+   ```
+
+**或者安装MiKTeX（体积更小）：**
+1. 访问 [MiKTeX官网](https://miktex.org/) 下载安装包
+2. 选择基本安装，按需下载宏包
+3. 设置自动安装缺失宏包功能
+
+#### 2.2 安装VSCode扩展
+在VSCode扩展商店中搜索并安装以下扩展：
+- **LaTeX Workshop**：核心LaTeX支持
+- **LaTeX Utilities（可选）**：增强功能
+- **Code Spell Checker（可选）**：拼写检查
+#### 2.3 配置LaTeX编译链
+在VSCode中按 `Ctrl+Shift+P`，输入 `Preferences: Open Settings (JSON)`，添加以下配置：
+
+<details>
+<summary>点击展开完整VSCode配置（推荐复制使用）</summary>
+
+```json
+{
+    //---------LaTeX Workshop 配置开始-----------
+    // 设置是否自动编译,可选："never", "onSave", "onFileChange"
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    //文件输出路径，会自动创建temp文件
+    //"latex-workshop.latex.outDir": "./temp",
+    //右键菜单
+    "latex-workshop.showContextMenu": true,
+    //从使用的包中自动补全命令和环境
+    "latex-workshop.intellisense.package.enabled": true,
+    //编译出错时设置是否弹出气泡设置
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    
+    // 指定 chktex 的完整路径
+    "latex-workshop.chktex.path": "D:/001Softwares/A03Research/texlive/2025/bin/windows/chktex.exe",
+    
+    // 编译工具和命令
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    // 用于配置编译链
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "XeLaTeX*2",
+            "tools": [
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "PDFLaTeX",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "PDFLaTeX*2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "BibTeX",
+            "tools": [
+                "bibtex"
+            ]
+        },
+        {
+            "name": "LaTeXmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex -> bibtex -> xelatex*2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    //文件清理。此属性必须是字符串数组
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+    ],
+    //设置为onFaild 在构建失败后清除辅助文件
+    "latex-workshop.latex.autoClean.run": "onFailed",
+    // 使用上次的recipe编译组合
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    //设置查看PDF的工具，可选"browser","tab","external"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.editor.empty.hint": "hidden",
+    "editor.fontSize": 16,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "debug.allowBreakpointsEverywhere": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.fontFamily": "FiraCode Nerd Font,Consolas, 'Courier New', monospace",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "default"
+    },
+    "workbench.settings.applyToAllProfiles": [
+
+    ],
+    
+    //---------LaTeX Workshop 配置结束-----------
+}
+```
+
+</details>
+
+#### 2.4 配置代码片段（可选）
+创建LaTeX代码片段，按 `Ctrl+Shift+P`，输入 `Preferences: Configure User Snippets`，选择 `latex.json`：
+
+```json
+{
+    "Table Environment": {
+        "prefix": "tableInsert",
+        "body": [
+            "\\begin{table}[htbp]",
+            "\\centering",
+            "\\caption{${1:Table Caption}}",
+            "\\label{tab:${2:label}}",
+            "\\begin{tabular}{${3:ccc}}",
+            "\\toprule",
+            "${4:Header 1} & ${5:Header 2} & ${6:Header 3} \\\\\\",
+            "\\midrule",
+            "${7:Data 1} & ${8:Data 2} & ${9:Data 3} \\\\\\",
+            "\\bottomrule",
+            "\\end{tabular}",
+            "\\end{table}"
+        ],
+        "description": "Insert a table environment"
+    }
+}
+```
+
+### 3. 使用步骤
 1. **获取模板**：克隆或下载本仓库到本地
-2. **进入模板目录**：`cd temple`
+2. **打开项目**：在VSCode中打开 `Template` 文件夹
 3. **配置基本信息**：编辑`main.tex`文件：
    ```latex
    \usepackage[1234567]{easymcm}  % 将1234567替换为你的队伍控制号
@@ -122,9 +351,13 @@ LaTeX-in-ICM-MCM/
    - `part_3_conclusion.tex`：结果分析、结论总结
    - `part_4_Appendix.tex`：代码、数据等附录内容
 5. **编译文档**：
+   - **VSCode方式**：按 `Ctrl+Alt+B` 自动编译，选择"xelatex -> bibtex -> xelatex*2"编译链
+   - **命令行方式**（支持参考文献）：
    ```bash
    xelatex main.tex
-   xelatex main.tex  # 编译两次确保交叉引用正确
+   bibtex main.aux
+   xelatex main.tex
+   xelatex main.tex  # 编译四次确保参考文献和交叉引用正确
    ```
 
 ### 3. 常用功能示例
@@ -285,11 +518,14 @@ def calculate_sum(matrix):
 - **[LaTeX工作室](https://www.latexstudio.net/)** - 持续提供的支持和资源，帮助解决了许多问题
 - **[Maki's Lab](https://www.maki-math.com/)** - 分享了丰富的LaTeX使用经验和技巧
 - **[Cai Hanlin(Lance)](https://caihanlin.com/)** - 分享了美赛的一些经验与建议
+- **[Gilles Castel](https://castel.dev/)** - LaTeX+Vim的1700页笔记工作流给我LaTeX使用的很多启发
 - **[Levitate Qian](https://levitate-qian.github.io/)** - 个人技术博客作者，分享了丰富的LaTeX使用经验和技巧
 - **[XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template)** - 提供了XJTLU会议海报的LaTeX模板，支持自定义内容和排版
 - **[B站-清风数学建模](https://space.bilibili.com/52614961?spm_id_from=333.337.0.0)** - 提供了数学算法、排版等新手教程，十分友好
 - **[B站-跟着浩然玩转高考物理](https://space.bilibili.com/384497590?spm_id_from=333.337.0.0)** - 分享了美赛的一些经验与得奖技巧
 - **[米醋电子工作室](https://www.micu.wiki/)** - 提供了一些AI编程的使用方法和技巧
+
+❗特别说明：本项目实际参考了互联网上很多优秀作者的资源（包括帖子、随笔、问答等），但是因为我的时间和精力有限，所以不能一一列出所有的参考资源，在此深感抱歉。如果您认为本项目参考了您的资源，欢迎联系我，我会在项目中添加您的资源链接。
 ## 🤝 贡献指南
 
 欢迎提交Issue和Pull Request来改进模板，或者添加你的美赛资源，但是我可能更新速度比较慢。

@@ -15,19 +15,20 @@
 \contentsline {section}{\numberline {6}Conclusions and Interesting Information}{9}{section.0.6}%
 \contentsline {subsection}{\numberline {6.1}Useful and Meaningful Conclusions}{9}{subsection.0.6.1}%
 \contentsline {section}{\numberline {7}Sensitivity Analysis}{9}{section.0.7}%
-\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{10}{section.0.8}%
-\contentsline {subsection}{\numberline {8.1}Strengths}{10}{subsection.0.8.1}%
-\contentsline {subsection}{\numberline {8.2}Weaknesses $\&$Further Discussion}{10}{subsection.0.8.2}%
-\contentsline {section}{\numberline {9}Conclusion}{10}{section.0.9}%
-\contentsline {section}{References}{11}{section.0.10}%
-\contentsline {section}{\numberline {A}First Section}{11}{appendix.A}%
-\contentsline {section}{\numberline {B}Python Code Examples}{12}{appendix.B}%
-\contentsline {subsection}{\numberline {B.1}Basic Python Example}{12}{subsection.B.1}%
-\contentsline {subsection}{\numberline {B.2}Data Analysis with Python}{12}{subsection.B.2}%
-\contentsline {section}{\numberline {C}Use of AI}{13}{appendix.C}%
-\contentsline {subsection}{\numberline {C.1}Model Development Assistance}{13}{subsection.C.1}%
-\contentsline {subsection}{\numberline {C.2}Data Processing and Analysis}{13}{subsection.C.2}%
-\contentsline {subsection}{\numberline {C.3}Mathematical Formulation Assistance}{14}{subsection.C.3}%
-\contentsline {subsection}{\numberline {C.4}Code Implementation Support}{14}{subsection.C.4}%
-\contentsline {subsection}{\numberline {C.5}Conclusion on AI Usage}{15}{subsection.C.5}%
+\contentsline {subsection}{\numberline {7.1}Visual Analysis}{10}{subsection.0.7.1}%
+\contentsline {section}{\numberline {8}Model Evaluation and Further Discussion}{11}{section.0.8}%
+\contentsline {subsection}{\numberline {8.1}Strengths}{11}{subsection.0.8.1}%
+\contentsline {subsection}{\numberline {8.2}Weaknesses $\&$Further Discussion}{11}{subsection.0.8.2}%
+\contentsline {section}{\numberline {9}Conclusion}{11}{section.0.9}%
+\contentsline {section}{References}{14}{section.0.10}%
+\contentsline {section}{\numberline {A}First Section}{14}{appendix.A}%
+\contentsline {section}{\numberline {B}Python Code Examples}{15}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Basic Python Example}{15}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Data Analysis with Python}{15}{subsection.B.2}%
+\contentsline {section}{\numberline {C}Use of AI}{16}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Model Development Assistance}{16}{subsection.C.1}%
+\contentsline {subsection}{\numberline {C.2}Data Processing and Analysis}{16}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Mathematical Formulation Assistance}{17}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}Code Implementation Support}{17}{subsection.C.4}%
+\contentsline {subsection}{\numberline {C.5}Conclusion on AI Usage}{18}{subsection.C.5}%
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  12 DEC 2025 11:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  17 DEC 2025 09:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1008,10 +1008,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [2] (./part_1_pre.tex
 File: img/test_1.jpg Graphic file (type bmp)
 <img/test_1.jpg>
+
+Underfull \hbox (badness 2126) in paragraph at lines 10--10
+[]\T1/ppl/m/n/10 (a) Sub-fig-ure Name1Long Lon-g-Long Lon-g-
+ []
+
 File: img/test_2.jpg Graphic file (type bmp)
 <img/test_2.jpg>
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 23.
- (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+(d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
 File: img/cat.jpeg Graphic file (type bmp)
@@ -1021,12 +1026,12 @@ File: img/cat.jpeg Graphic file (type bmp)
 [3
 
 ]
-Overfull \hbox (1.53496pt too wide) in paragraph at lines 59--59
+Overfull \hbox (1.53496pt too wide) in paragraph at lines 60--60
  []|\T1/ppl/b/n/12 Units| 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in paragraph at lines 55--68
+Overfull \hbox (7.5472pt too wide) in paragraph at lines 56--69
  [] 
  []
 
@@ -1038,12 +1043,12 @@ File: img/catsquare.jpeg Graphic file (type bmp)
 File: img/catsquare.jpeg Graphic file (type bmp)
 <img/catsquare.jpeg>
 
-Overfull \hbox (2.41002pt too wide) in paragraph at lines 184--184
+Overfull \hbox (2.41002pt too wide) in paragraph at lines 185--185
  []|\T1/ppl/b/n/12 Sensitivity| 
  []
 
 
-Overfull \hbox (2.41002pt too wide) in paragraph at lines 190--190
+Overfull \hbox (2.41002pt too wide) in paragraph at lines 191--191
  []|\T1/ppl/b/n/12 Sensitivity| 
  []
 
@@ -1066,22 +1071,55 @@ File: img/catsquare.jpeg Graphic file (type bmp)
 <img/catsquare.jpeg>
 
 
-[8]) (./part_3_conclusion.tex)
+[8]) (./part_3_conclusion.tex
+File: img/cat.jpeg Graphic file (type bmp)
+<img/cat.jpeg>
+
+Missing character: There is no α ("3B1) in font pplr8t!
+File: img/cat.jpeg Graphic file (type bmp)
+<img/cat.jpeg>
+Missing character: There is no β ("3B2) in font pplr8t!
+File: img/cat.jpeg Graphic file (type bmp)
+<img/cat.jpeg>
+Missing character: There is no γ ("3B3) in font pplr8t!
+File: img/cat.jpeg Graphic file (type bmp)
+<img/cat.jpeg>
+Missing character: There is no δ ("3B4) in font pplr8t!
+
 
 [9]
+Missing character: There is no α ("3B1) in font pplr8t!
+Missing character: There is no β ("3B2) in font pplr8t!
+Missing character: There is no γ ("3B3) in font pplr8t!
+Missing character: There is no δ ("3B4) in font pplr8t!
+File: img/catsquare.jpeg Graphic file (type bmp)
+<img/catsquare.jpeg>
+File: img/catsquare.jpeg Graphic file (type bmp)
+<img/catsquare.jpeg>
+)
 
-[10] (./part_4_Appendix.tex
+[10]
+
+[11]
+
+[12
+
+]
+
+[13
+
+] (./part_4_Appendix.tex
 \g__tcobox_out_iow=\write7
 \openout7 = `main.listing'.
 
-Package hyperref Info: bookmark level for unknown tcolorbox defaults to 0 on input line 52.
+Package hyperref Info: bookmark level for unknown tcolorbox defaults to 0 on input line 59.
  (./main.listing
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 6.
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ))
 
-[11
+[14
 
 ]
 \openout7 = `main.listing'.
@@ -1094,62 +1132,18 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (./main.listing
-Missing character: There is no 代 ("4EE3) in font pcrr8t!
-Missing character: There is no 码 ("7801) in font pcrr8t!
-Missing character: There is no 示 ("793A) in font pcrr8t!
-Missing character: There is no 例 ("4F8B) in font pcrr8t!
-Missing character: There is no 计 ("8BA1) in font pcrr8t!
-Missing character: There is no 算 ("7B97) in font pcrr8t!
-Missing character: There is no 斐 ("6590) in font pcrr8t!
-Missing character: There is no 波 ("6CE2) in font pcrr8t!
-Missing character: There is no 那 ("90A3) in font pcrr8t!
-Missing character: There is no 契 ("5951) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-Missing character: There is no 列 ("5217) in font pcrr8t!
-Missing character: There is no 测 ("6D4B) in font pcrr8t!
-Missing character: There is no 试 ("8BD5) in font pcrr8t!
-Missing character: There is no 函 ("51FD) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-)
+) (./main.listing)
 \openout7 = `main.listing'.
 
- (./main.listing
-Missing character: There is no 创 ("521B) in font pcrr8t!
-Missing character: There is no 建 ("5EFA) in font pcrr8t!
-Missing character: There is no 示 ("793A) in font pcrr8t!
-Missing character: There is no 例 ("4F8B) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-Missing character: There is no 据 ("636E) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-Missing character: There is no 据 ("636E) in font pcrr8t!
-Missing character: There is no 分 ("5206) in font pcrr8t!
-Missing character: There is no 析 ("6790) in font pcrr8t!
-Missing character: There is no 和 ("548C) in font pcrr8t!
-Missing character: There is no 可 ("53EF) in font pcrr8t!
-Missing character: There is no 视 ("89C6) in font pcrr8t!
-Missing character: There is no 化 ("5316) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-Missing character: There is no 据 ("636E) in font pcrr8t!
-Missing character: There is no 统 ("7EDF) in font pcrr8t!
-Missing character: There is no 计 ("8BA1) in font pcrr8t!
-Missing character: There is no 信 ("4FE1) in font pcrr8t!
-Missing character: There is no 息 ("606F) in font pcrr8t!
-Missing character: There is no 正 ("6B63) in font pcrr8t!
-Missing character: There is no 弦 ("5F26) in font pcrr8t!
-Missing character: There is no 函 ("51FD) in font pcrr8t!
-Missing character: There is no 数 ("6570) in font pcrr8t!
-Missing character: There is no 图 ("56FE) in font pcrr8t!
-Missing character: There is no 像 ("50CF) in font pcrr8t!
-)
+ (./main.listing)
 
-[12]
+[15]
 
-[13]
+[16]
 
-[14])
+[17])
 
-[15] 
+[18] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1157,15 +1151,15 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 64EDD9FD880B5B688E513E9676066491;5982.
+(rerunfilecheck)             Checksum: 328A63AF667B05A2D06A88AE6C3A6F95;6144.
  ) 
 Here is how much of TeX's memory you used:
- 34976 strings out of 475796
- 682735 string characters out of 5771408
- 1439398 words of memory out of 5000000
- 57298 multiletter control sequences out of 15000+600000
+ 34979 strings out of 475796
+ 682805 string characters out of 5771408
+ 1446569 words of memory out of 5000000
+ 57301 multiletter control sequences out of 15000+600000
  587833 words of font info for 93 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 98i,19n,101p,471b,1946s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,19n,101p,477b,1946s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (15 pages).
+Output written on main.pdf (18 pages).

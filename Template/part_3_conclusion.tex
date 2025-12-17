@@ -13,6 +13,37 @@
 \section{Sensitivity Analysis}
 \dots
 
+\subsection{Visual Analysis}
+
+\begin{figure}[H]
+    \centering
+    \subfigure[Sensitivity Analysis of Parameter α]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
+    \hspace{0.5cm}
+    \subfigure[Sensitivity Analysis of Parameter β]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
+    \\
+    \subfigure[Sensitivity Analysis of Parameter γ]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
+    \hspace{0.5cm}
+    \subfigure[Sensitivity Analysis of Parameter δ]{\includegraphics[width=0.45\linewidth]{img/cat.jpeg}}
+    \caption{Visualization of Sensitivity Analysis Results}
+    \label{fig:sensitivity_analysis}
+\end{figure}
+\vspace{-0.5cm}
+Through the four subfigures above, we can clearly observe the sensitivity impact of different parameters on the model output. The top-left figure shows the effect of parameter α variation on the results, the top-right figure displays the sensitivity of parameter β, the bottom-left figure analyzes the role of parameter γ, and the bottom-right figure demonstrates the influence of parameter δ.
+
+\begin{figure}[H] %[H]让图片在文章中的位置就是这段代码的位置
+	\centering
+		\begin{minipage}[t]{0.45\linewidth} %并排排列图片使用\minipage{}环境,而子图排列使用\subfigure{}环境
+			\centering
+			\includegraphics[width=0.9\linewidth]{catsquare.jpeg}
+            \captionsetup{justification=centering} \caption{Left Figure}
+		\end{minipage}%
+		\begin{minipage}[t]{0.45\linewidth}
+			\centering
+			\includegraphics[width = 0.9\linewidth]{catsquare.jpeg}
+			\captionsetup{justification=centering} \caption{Middle Figure}
+		\end{minipage}%
+    \vspace{-0.5cm}
+\end{figure}
 \section{Model Evaluation and Further Discussion}
 \subsection{Strengths}
 

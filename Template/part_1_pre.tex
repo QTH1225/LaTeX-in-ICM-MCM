@@ -6,7 +6,7 @@
 %---------------------------------子图的排版与语法
 \begin{figure}[htbp]
     \centering    
-    \subfigure[Subfigure Name1(left)]{				% 图片1([]内为子图标题)						
+    \subfigure[Subfigure Name1Long LongLong LongLong LongLong Long(left)]{				% 图片1([]内为子图标题)						
     \includegraphics[width=0.45\textwidth]{test_1.jpg}}			  % 子图1的图片宽度 不能空行
     \subfigure[Subfigure Name2(right)]{				% 图片2,其中width代表图片宽度,可以调整
     \includegraphics[width=0.45\textwidth]{test_2.jpg}} %注意此处的文件格式为.jpg
@@ -30,7 +30,8 @@
 \begin{figure}[H]  %h此处，t页顶，b页底，p独立一页，浮动体出现的位置
     \centering  %图表居中
     \includegraphics[width=.80\textwidth]{cat.jpeg} %图片的名称或者路径之中有空格会出问题 
-    \caption{Flow Chart of this Paper's Research} % 图片标题 
+    \captionsetup{justification=centering} %超长标题时仍然保持居中
+    \caption{Flow Chart of this Paper's Research It is Long Long Long Long \protect\\Long Long Long Long Long Long} % 图片标题 
 \end{figure}
 \vspace{-1cm}
 
