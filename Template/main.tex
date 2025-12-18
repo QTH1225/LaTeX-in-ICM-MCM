@@ -33,13 +33,15 @@
 
 \usepackage{pgfornament} %花样装饰包(待研究)
 \usepackage[ruled,linesnumbered]{algorithm2e} %伪代码排版包
+\usepackage{tikz} %绘图包
+\usetikzlibrary{arrows.meta, positioning, calc}
 %-------------------------------------------交叉引用实现包
 \usepackage{hyperref}
 \usepackage{cleveref}
 
 \graphicspath{{img/}}          % 此处{img/}为相对路径，注意加上“/”
- \let\itemize\compactitem
- \let\enditemize\endcompactitem
+\let\itemize\compactitem
+\let\enditemize\endcompactitem
 %-------------------------------------------附录代码排版盒子（起）
  \tcbset{%
  mylist/.style = {%

@@ -2,6 +2,36 @@
 \subsection{Layout of Formulas}
 We can use the following codes to describe a part of calculation. 
 
+\textbf{Examples of Theorem Environment Usage:}
+\begin{Definition}
+    A covariance matrix is a symmetric matrix that describes the covariance relationships between multiple random variables. For $n$ random variables $X_1, X_2, \ldots, X_n$, the covariance matrix $\Sigma$ is defined as:
+    \[
+    \Sigma_{ij} = \text{Cov}(X_i, X_j)
+    \]
+\end{Definition}
+
+\begin{Theorem}[Matrix Eigenvalue Decomposition]
+    For any real symmetric matrix $A$, there exists an orthogonal matrix $Q$ and a diagonal matrix $\Lambda$ such that:
+    \[
+    A = Q\Lambda Q^T
+    \]
+    where the diagonal elements of $\Lambda$ are the eigenvalues of $A$, and the column vectors of $Q$ are the eigenvectors of $A$.
+\end{Theorem}
+
+\begin{Example}[Covariance Matrix Calculation Example]
+    Consider two random variables $X$ and $Y$ with sample data:
+    \[
+    X = [1, 2, 3, 4], \quad Y = [2, 4, 6, 8]
+    \]
+    The covariance matrix is then:
+    \[
+    \Sigma = \begin{bmatrix}
+    \text{Var}(X) & \text{Cov}(X,Y) \\
+    \text{Cov}(Y,X) & \text{Var}(Y)
+    \end{bmatrix}
+    \]
+\end{Example}
+
 \begin{enumerate}[\bfseries 1.]
     \setlength{\parsep}{0ex} %段落间距
     \setlength{\topsep}{0ex} %列表到上下文的垂直距离

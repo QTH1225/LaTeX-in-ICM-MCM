@@ -54,7 +54,7 @@
 
 ```
 LaTeX-in-ICM-MCM/
-├── temple/                    # 主模板目录（推荐使用）
+├── Template/                  # 主模板目录（推荐使用）
 │   ├── main.tex              # 主文档入口
 │   ├── part_1_pre.tex        # 问题分析部分（引言、假设、符号说明）
 │   ├── part_2_model.tex      # 模型建立部分（模型构建、求解）
@@ -67,6 +67,8 @@ LaTeX-in-ICM-MCM/
 ├── Memos/                     # 备忘录和信件模板
 │   ├── Letter/               # 官方信件模板
 │   └── XJTLU-Poster-Template-main/  # 海报模板
+├── LICENSE                    # 许可证文件
+├── .gitignore                # Git忽略文件配置
 └── README.md                  # 项目说明文档
 ```
 

@@ -31,12 +31,13 @@
 
 % 定理环境声明
 % 事实上大部分论文中用不到，但仍保留以供使用
-\newtheorem{Theorem}{Theorem}[section]
-\newtheorem{Lemma}[Theorem]{Lemma}
-\newtheorem{Corollary}[Theorem]{Corollary}
-\newtheorem{Proposition}[Theorem]{Proposition}
-\newtheorem{Definition}[Theorem]{Definition}
-\newtheorem{Example}[Theorem]{Example}
+\RequirePackage{mdframed}  % 用于添加带背景色的定理环境
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Theorem}{Theorem}[section]
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Lemma}[Theorem]{Lemma}
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Corollary}[Theorem]{Corollary}
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Proposition}[Theorem]{Proposition}
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Definition}[Theorem]{Definition}
+\newmdtheoremenv[backgroundcolor=grey,linewidth=2pt,leftline=true,rightline=false,topline=false,bottomline=false,innertopmargin=6pt,innerbottommargin=6pt,innerleftmargin=8pt,innerrightmargin=8pt]{Example}[Theorem]{Example}
 
 % 目录
 \RequirePackage{titlesec,titletoc}  % 自定义目录样式
@@ -160,7 +161,7 @@
 % 代码相关
 \RequirePackage{listings}
 \RequirePackage{color,xcolor}
-\definecolor{grey}{rgb}{0.8,0.8,0.8}
+\definecolor{grey}{rgb}{0.85,0.85,0.85}
 \definecolor{darkgreen}{rgb}{0,0.3,0}
 \definecolor{darkblue}{rgb}{0,0,0.3}
 \def\lstbasicfont{\fontfamily{pcr}\selectfont\footnotesize}

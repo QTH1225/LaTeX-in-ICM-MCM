@@ -1,17 +1,34 @@
 \section{Conclusions and Interesting Information}
-...
+\ldots
 \subsection{Useful and Meaningful Conclusions}
 \begin{itemize}
     \setlength{\parsep}{0ex} %段落间距
     \setlength{\topsep}{2ex} %列表到上下文的垂直距离
     \setlength{\itemsep}{1ex} %条目间距
-    \item As we can see...
-    \item As we can see...
-    \item As we can see...
+    \item As we can see \ldots
+    \item As we can see\ldots
+    \item As we can see\ldots
 \end{itemize}
 
 \section{Sensitivity Analysis}
 \dots
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+        \draw[-Latex] (0,0,0) -- (3,0,0) node[right] {$x$}; 
+        \draw[-Latex] (0,0,0) -- (0,3,0) node[above] {$y$}; 
+        \draw[-Latex] (0,0,0) -- (0,0,3) node[below left] {$z$}; 
+        \filldraw[fill=gray!30!white, thick] (0,0,2) -- (0,2,0) -- (2,0,0) -- (0,0,2); 
+        \draw[densely dashed] (0,0,0) -- (0,2,0); 
+        \draw[densely dashed] (0,0,0) -- (0,0,2); 
+        \draw[densely dashed] (0,0,0) -- (2,0,0); 
+        \node[above right] at (0,0,0) {$O$}; 
+    \end{tikzpicture}
+    \caption{Three-Dimensional Coordinate System with Triangular Plane}
+\label{fig:3d_coordinate}
+\end{figure}
+\vspace{-0.5cm}
 
 \subsection{Visual Analysis}
 
@@ -21,34 +38,34 @@
         \centering
         \includegraphics[width=\linewidth]{img/cat.jpeg}
         \captionsetup{justification=centering}
-        \caption{Sensitivity Analysis of Parameter α}
+        \caption{Sensitivity Analysis of Parameter $\alpha$}
     \end{subfigure}
     \hspace{0.02\linewidth}
     \begin{subfigure}[t]{0.48\linewidth}
         \centering
         \includegraphics[width=\linewidth]{img/cat.jpeg}
         \captionsetup{justification=centering}
-        \caption{Sensitivity Analysis of Parameter β}
+        \caption{Sensitivity Analysis of Parameter $\beta$}
     \end{subfigure}
     \\[0.5cm]
     \begin{subfigure}[t]{0.48\linewidth}
         \centering
         \includegraphics[width=\linewidth]{img/cat.jpeg}
         \captionsetup{justification=centering}
-        \caption{Sensitivity Analysis of Parameter γ}
+        \caption{Sensitivity Analysis of Parameter $\gamma$}
     \end{subfigure}
     \hspace{0.02\linewidth}
     \begin{subfigure}[t]{0.48\linewidth}
         \centering
         \includegraphics[width=\linewidth]{img/cat.jpeg}
         \captionsetup{justification=centering}
-        \caption{Sensitivity Analysis of Parameter δ}
+        \caption{Sensitivity Analysis of Parameter $\delta$}
     \end{subfigure}
     \caption{Visualization of Sensitivity Analysis Results}
-    \label{fig:sensitivity_analysis}
+\label{fig:sensitivity_analysis}
 \end{figure}
 \vspace{-0.5cm}
-Through the four subfigures above, we can clearly observe the sensitivity impact of different parameters on the model output. The top-left figure shows the effect of parameter α variation on the results, the top-right figure displays the sensitivity of parameter β, the bottom-left figure analyzes the role of parameter γ, and the bottom-right figure demonstrates the influence of parameter δ.
+Through the four subfigures above, we can clearly observe the sensitivity impact of different parameters on the model output. The top-left figure shows the effect of parameter $\alpha$ variation on the results, the top-right figure displays the sensitivity of parameter $\beta$, the bottom-left figure analyzes the role of parameter $\gamma$, and the bottom-right figure demonstrates the influence of parameter $\delta$.
 
 \begin{figure}[H] %[H]让图片在文章中的位置就是这段代码的位置
 	\centering
