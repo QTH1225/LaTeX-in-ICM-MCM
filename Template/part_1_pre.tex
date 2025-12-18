@@ -10,14 +10,14 @@
         \centering
         \includegraphics[width=\textwidth]{test_1.jpg}
         \captionsetup{justification=centering}
-        \caption{Subfigure Name1Long LongLong LongLong LongLong Long(left)}
+        \caption{Subfigure Name1Long LongLong LongLong LongLong Long (left)}
     \end{subfigure}
     \hspace{0.02\textwidth}
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{test_2.jpg}
         \captionsetup{justification=centering}
-        \caption{Subfigure Name2(right)}
+        \caption{Subfigure Name2 (right)}
     \end{subfigure}
 	\caption{Figure Name} % 图片标题 
 \end{figure}
@@ -46,14 +46,14 @@
 
 %--------------------------------假设部分较复杂的无序列表
 \section{Assumptions and Explanations}
-Considering ...
+Considering \ldots
 \begin{enumerate}[\bfseries \textit{Assumption} 1:]
-	\item \textbf{We assume that ...}\\
-	\textbf{\textit{Explanation:}}...
-	\item \textbf{We assume that ...}\\
-	\textbf{\textit{Explanation:}}...
-	\item \textbf{We assume ...}\\
-	\textbf{\textit{Explanation:}}...
+	\item \textbf{We assume that \ldots}\\
+	\textbf{\textit{Explanation:}}\ldots
+	\item \textbf{We assume that \ldots}\\
+	\textbf{\textit{Explanation:}}\ldots
+	\item \textbf{We assume \ldots}\\
+	\textbf{\textit{Explanation:}}\ldots
 \end{enumerate}
 
 \section{Notations}
@@ -90,7 +90,7 @@ For a large amount of data, it is necessary to process and clean the data before
 \begin{table}[H]%浮动体的htbp可以强制在原位显示，改参数为H
   \begin{center}
   \fontsize{12pt}{13.8}
-  \caption{Missing Data in Given Data} \label{tb:missing_data}
+  \caption{Missing Data in Given Data}\label{tb:missing_data}
   \resizebox{\textwidth}{!}
   {\begin{tabular}{||l|l|c c c c|r|r||} %此处设置了不同类型的参数及线供参考
   \toprule[2pt]
@@ -106,7 +106,7 @@ For a large amount of data, it is necessary to process and clean the data before
   \midrule
   \multirow{3}*{\makecell[c]{Looooog\\Word}}%合并行操作,同时进行了合并行内的换行，{}内是合并的行数
   &A&B&C&D&-&E&F \\
-  ~ &A&B&C&D&-&E&F   \\
+  ~ &A&B&C&D&-&E&F \\
   ~ &A&B&C&D&-&E&F \\ 
   Multicolumn&\multicolumn{7}{c}{These columns share common features} \\%合并列操作，{}内是合并的列数
   \bottomrule[2pt]
@@ -138,21 +138,21 @@ And other data sources are shown in \Cref{tb:data_source}.
 \vspace{-1cm}
 
 \subsubsection{Data Screening}
-According to the data given, we...
+According to the data given, we\ldots
 \begin{figure}[htbp]
     \centering    
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{catsquare.jpeg}
         \captionsetup{justification=centering}
-        \caption{Cute Cat(left)}
+        \caption{Cute Cat (left)}
     \end{subfigure}
     \hspace{0.02\textwidth}
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{catsquare.jpeg}
         \captionsetup{justification=centering}
-        \caption{Cute Cat(right)}
+        \caption{Cute Cat (right)}
     \end{subfigure}
 	\caption{Data Screening}  
 \end{figure}
@@ -204,7 +204,8 @@ To provide a comprehensive analysis of the model parameters, we present a detail
 \midrule
 \endfirsthead
 
-\multicolumn{5}{c}{{\tablename\ \thetable{} -- Continued from previous page}}\\
+\multicolumn{5}{c}{{\tablename\ \thetable{}  Continued from previous page}}\\
+
 \toprule[2pt]
 \multicolumn{1}{m{2.5cm}}{\centering \textbf{Parameter}} & \multicolumn{1}{m{2cm}}{\centering \textbf{Type}} & \multicolumn{1}{m{3cm}}{\centering \textbf{Range}} & \multicolumn{1}{m{2.5cm}}{\centering \textbf{Default Value}} & \multicolumn{1}{m{2cm}}{\centering \textbf{Sensitivity}} \\
 \midrule
