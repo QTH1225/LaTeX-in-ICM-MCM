@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  18 DEC 2025 22:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  19 DEC 2025 10:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -977,6 +977,51 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen342
+\WF@size=\dimen343
+\c@WF@wrappedlines=\count383
+\WF@box=\box116
+\WF@everypar=\toks61
+Package: wrapfig 2003/01/31  v 3.6
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2025-01-30 v2.80 (Daniel Flipo)
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+Package: xfp 2024-08-16 L3 Floating point unit
+)
+\c@DefaultLines=\count384
+\c@DefaultDepth=\count385
+\DefaultFindent=\dimen344
+\DefaultNindent=\dimen345
+\DefaultSlope=\dimen346
+\DiscardVskip=\dimen347
+\L@lettrine=\box117
+\L@lbox=\box118
+\L@tbox=\box119
+\c@L@lines=\count386
+\c@L@depth=\count387
+\L@Pindent=\dimen348
+\L@Findent=\dimen349
+\L@Nindent=\dimen350
+\L@lraise=\dimen351
+\L@first=\dimen352
+\L@next=\dimen353
+\L@slope=\dimen354
+\L@height=\dimen355
+\L@novskip=\dimen356
+\L@target@ht=\dimen357
+\L@target@dp=\dimen358
+\L@target@tht=\dimen359
+\LettrineWidth=\dimen360
+\LettrineHeight=\dimen361
+\LettrineDepth=\dimen362
+\L@finalht=\dimen363
+\L@finaldp=\dimen364
+
+Loading lettrine.cfg
+(d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/lettrine/lettrine.cfg)
+\Lettrine@tweaks=\toks62
+\Llist@everypar=\toks63
 ) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -993,35 +1038,35 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `listings' support loaded on input line 3131.
 Package cleveref Info: `algorithm2e' support loaded on input line 3147.
 )
-\c@tcb@cnt@matlab=\count383
-\c@tcb@cnt@python=\count384
+\c@tcb@cnt@matlab=\count388
+\c@tcb@cnt@python=\count389
  (./new_command.tex)
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 114.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 117.
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1066,13 +1111,14 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 114.
+Package hyperref Info: Link coloring ON on input line 117.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count385
+\c@lstlisting=\count390
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1082,11 +1128,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 ))
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 123.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 126.
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 123.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 126.
  (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1145,15 +1191,18 @@ Overfull \hbox (2.41002pt too wide) in paragraph at lines 203--203
  []
 
 
-Overfull \hbox (2.41002pt too wide) in paragraph at lines 210--210
+Overfull \hbox (2.41002pt too wide) in paragraph at lines 209--209
  []|\T1/ppl/b/n/12 Sensitivity| 
  []
 
 
 
 [5] [6]) (./part_2_model.tex
+Package mdframed Info: Not enough space on this page on input line 19.
+
 
 [7]
+Package mdframed Info: Not enough space on this page on input line 19.
 File: img/catsquare.jpeg Graphic file (type bmp)
 <img/catsquare.jpeg>
 File: img/catsquare.jpeg Graphic file (type bmp)
@@ -1187,9 +1236,21 @@ File: img/catsquare.jpeg Graphic file (type bmp)
 <img/catsquare.jpeg>
 File: img/catsquare.jpeg Graphic file (type bmp)
 <img/catsquare.jpeg>
-)
+File: img/catsquare.jpeg Graphic file (type bmp)
+<img/catsquare.jpeg>
+
 
 [11]
+Package lettrine.sty Info: Targeted height = 21.21988pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 25.46391pt (I) loversize=0.2;
+(lettrine.sty)             reported on input line 113.
+
+Overfull \hbox (2.19003pt too wide) in paragraph at lines 113--114
+\T1/ppl/m/n/12 ther con-firms the model's prac-ti-cal ap-pli-ca-bil-ity in real-world sce-nar-ios. The model's
+ []
+
+)
 
 [12]
 
@@ -1245,12 +1306,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 328A63AF667B05A2D06A88AE6C3A6F95;6144.
  ) 
 Here is how much of TeX's memory you used:
- 36335 strings out of 475796
- 715636 string characters out of 5771408
- 1491490 words of memory out of 5000000
- 58624 multiletter control sequences out of 15000+600000
- 589627 words of font info for 95 fonts, out of 8000000 for 9000
+ 36650 strings out of 475796
+ 722712 string characters out of 5771408
+ 1495270 words of memory out of 5000000
+ 58924 multiletter control sequences out of 15000+600000
+ 593995 words of font info for 99 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 98i,19n,107p,688b,1946s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,19n,107p,773b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (19 pages).
