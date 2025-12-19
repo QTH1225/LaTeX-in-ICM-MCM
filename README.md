@@ -8,7 +8,7 @@
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
 ![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
-![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?color=blue&label=Downloads&cacheSeconds=3600)
+![Last commit](https://img.shields.io/github/last-commit/QTH1225/LaTeX-in-ICM-MCM?color=blue&label=Last%20commit&cacheSeconds=3600)
 
 </div>
 
@@ -519,6 +519,7 @@ def calculate_sum(matrix):
 
 #### 学习资源
 - [Deep Learning项目](https://github.com/Mikoto10032/DeepLearning) - 深度学习学习资源，包含教程和代码示例
+- [Vibe Coding](https://github.com/tukuaiai/vibe-coding-cn) - Vibe Coding指南，提供一些AI编程的使用方法和技巧
 
 ### 📄 Word与办公工具
 - [Zotero中文社区](https://zotero-chinese.com/) - 文献管理工具Zotero的中文支持社区，提供使用教程和插件
