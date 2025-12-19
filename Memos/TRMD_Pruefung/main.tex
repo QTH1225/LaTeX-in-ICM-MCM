@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{lipsum} % Package for Lorem Ipsum text
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+
+% Set up header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{TRMD NEWS}}
+\fancyhead[C]{\textbullet \ \ 12. Oktober 2024 \ \textbullet \ \ A.K. \ \textbullet}
+\fancyhead[R]{the.akdesign}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Section formatting for title look
+\titleformat{\section}{\bfseries\Large}{}{0em}{}
+
+% Reduce the space between columns
+\setlength{\columnsep}{10pt}  % Adjust the value to reduce the gap
+
+% Document begins
+\begin{document}
+
+% Title
+\begin{center}
+    {\huge \textbf{ Lorem ipsum dolor sit amet}}\\
+    \vspace{0.5cm}
+    {\large \textit{Lore Ipsum}}
+\end{center}
+
+% Begin multicolumn layout
+\begin{multicols}{2}
+
+% First column content
+\lipsum[1-2]
+\begin{center}
+    \includegraphics[width=\linewidth]{example-image} % Replace with your image
+    \textit{Image}
+\end{center}
+
+% Insert image
+\columnbreak
+
+\begin{center}
+    \includegraphics[width=\linewidth]{example-image} % Replace with your image
+    \textit{Image}
+\end{center}
+
+\lipsum[3-4]
+
+\end{multicols}
+
+% Continue with two-column layout
+\begin{multicols}{2}
+
+\lipsum[5-9]
+
+\end{multicols}
+
+\end{document}

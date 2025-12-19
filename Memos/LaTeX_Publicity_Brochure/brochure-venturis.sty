@@ -1,0 +1,117 @@
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+% left=right should be 1cm but my printer has unprintable bottom
+% margin (right margin when printing landscape) of 16mm which means
+% (to keep it symmetrical) a total printable width of 420 - 16 - 16 =
+% 388mm. 
+%\usepackage[landscape,a3paper,left=16mm,right=16mm,
+%            nohead,nofoot,top=5mm,bottom=5mm]{geometry}
+% But something goes wrong, and the RH edge is actually 21mm from the
+% edge of the paper, so instead I use this to move it 5mm rightwards,
+% and the bottom edge doesn't provide enough space, so that is shifted
+% upwards by 2mm:
+\usepackage[a4paper,left=15mm,right=15mm,
+            nohead,nofoot,top=10mm,bottom=10mm]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{apacite,array,multicol,textcomp,calc,graphicx,url,enumitem,
+fancybox,multirow,colortbl,bbding,oldgerm,mflogo,type1cm,ragged2e}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Bodge the METAFONT scaling because it's broken in the package
+%
+\DeclareFontFamily{U}{logo}{}
+\DeclareFontShape{U}{logo}{m}{n}{
+  <5> <6> <7> logo10
+  <8> <9> gen * logo
+  <10> <10.95> <12> <14.4> <17.28> <20.74> <24.88> logo10
+}{}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Fonts
+%
+%\usepackage[default]{warnock}
+%\usepackage[default]{aller}
+\usepackage{venturis}
+\newcommand{\deco}{\fontencoding{U}\fontfamily{yinit}\selectfont
+	\color{MidnightBlue}\Huge\null\raisebox{-\baselineskip}}
+\newcommand{\frak}{\frakfamily
+	\renewcommand{\baselinestretch}{.5}\huge
+	\spaceskip=2pt plus.5pt minus.5pt\frenchspacing\color{Brown}}
+\newcommand{\rubric}{\small\raggedleft}
+% formatting
+%
+%\newcommand{\columnbreak}{\break}
+\usepackage{lettrine}
+% Sans font may have Light weight, so make it usable
+\newcommand{\lite}{\fontseries{l}\selectfont\def\bfdefault{m}}
+% Odds
+\def\BibTeX{\textsc{Bib}\kern-.08em\TeX}
+\def\BibLaTeX{\textsc{Bib}\LaTeX}
+\def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
+\newcommand{\fakesubsection}[1]{%
+  \par\noindent{\Large\bfseries#1}\par
+}
+\setcounter{secnumdepth}{0}
+\pagestyle{empty}
+\hyphenation{Graphi-cal docu-ment docu-ments re-vo-lu-tio-nary manu-fac-tu-rer mathe-ma-tic-ian}
+\newcommand{\et}{{\frakfamily\fontsize{.8em}{0pt}\selectfont7\llap-}}
+\newcommand{\ding}{\fontencoding{U}\fontfamily{ding}\selectfont}
+\newlength{\bulletrulesize}
+\newlength{\bulletrulewidth}
+\newcommand{\bulletrule}{\setlength{\bulletrulewidth}{\textwidth}%
+	\divide\bulletrulewidth by40
+	\setlength{\bulletrulesize}{\textwidth}%
+	\addtolength{\bulletrulesize}{4\bulletrulewidth}%
+	\begingroup\centering\leavevmode\kern-2\bulletrulewidth
+		\hbox to\bulletrulesize{\color{ForestGreen}%
+			\xleaders
+			\hbox to\bulletrulewidth{\hfil\CircleSolid\hfil}%
+			\hfill}%
+	\par\endgroup}
+\newcommand{\quoted}[1]{\hfill\begingroup\textit{#1}\parfillskip=0pt\par\endgroup}
+% tighter lists
+\renewcommand{\labelitemi}{\footnotesize\SquareCastShadowBottomRight}
+\renewcommand{\labelitemii}{\textbullet}
+% same-page bibliography
+\renewenvironment{thebibliography}[1]
+     {\subsection*{\refname}\vspace*{.5\baselineskip}%
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+%
+\def\tubreflect#1{%
+  \@ifundefined{reflectbox}{%
+    \TBerror{A graphics package must be loaded for \string\XeTeX}%
+  }{%
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  }%
+}
+\providecommand{\@docclass}{brochure}
+\def\TBError{\ClassError{\@docclass}}
+\def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\DeclareRobustCommand\Xe[1]{\leavevmode
+  \tubhideheight{\hbox{X%
+    \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
+    \lower\dp0\hbox{\raise\dp1\hbox{\kern-.125em\tubreflect{E}}}%
+    \kern-.1667em #1}}}
+\def\XeTeX{\Xe\TeX}
+\def\XeLaTeX{\Xe{\,\LaTeX}}

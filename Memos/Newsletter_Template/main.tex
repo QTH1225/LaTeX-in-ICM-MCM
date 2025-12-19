@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Newsletter  % Source: http://www.howtotex.com
+%
+% Feel free to distribute this example, but please keep the referral
+% to howtotex.com
+% Date: September 2011 
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Edit the title below to update the display in My Documents
+%\title{Newsletter Template}
+
+%%% ---------------
+%%% PREAMBLE
+%%% ---------------
+\documentclass[10pt,a4paper]{article}
+
+% Define geometry (without using the geometry package)
+\setlength\topmargin{-48pt}
+\setlength\headheight{0pt}
+\setlength\headsep{25pt}
+\setlength\marginparwidth{-20pt}
+\setlength\textwidth{7.0in}
+\setlength\textheight{9.5in}
+\setlength\oddsidemargin{-30pt}
+\setlength\evensidemargin{-30pt}
+
+\frenchspacing						% better looking spacing
+
+% Call packages we'll need
+\usepackage[english]{babel}			% english
+\usepackage{graphicx}				% images
+\usepackage{amssymb,amsmath}		% math
+\usepackage{multicol}				% three-column layout
+\usepackage{url}					% clickable links
+\usepackage{marvosym}				% symbols
+\usepackage{wrapfig}				% wrapping text around figures
+\usepackage[T1]{fontenc}			% font encoding
+\usepackage{charter} 				% Charter font for main content
+\usepackage{blindtext}				% dummy text
+\usepackage{datetime}				% custom date
+	\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}
+\usepackage[pdfpagemode=FullScreen,
+			colorlinks=false]{hyperref}	% links and pdf behaviour
+
+% Customize (header and) footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lfoot{	\footnotesize 
+		Science \& Technology Newletter \\
+		\Mundus\ \href{http://www.howtotex.com}{HowToTeX.com}	\quad
+		\Telefon\ 555-5555											\quad
+		\Letter\ \href{mailto:frits@howtotex.com}{frits@howtotex.com}
+	  }
+\cfoot{}
+\rfoot{\footnotesize ~\\ Page \thepage}
+\renewcommand{\headrulewidth}{0.0pt}	% no bar on top of page
+\renewcommand{\footrulewidth}{0.4pt}	% bar on bottom of page
+
+%%% ---------------
+%%% DEFINITIONS
+%%% ---------------
+
+% Define separators
+\newcommand{\HorRule}[1]{\noindent\rule{\linewidth}{#1}} % Creating a horizontal rule
+\newcommand{\SepRule}{\noindent							 % Creating a separator
+						\begin{center}
+							\rule{250pt}{1pt}
+						\end{center}
+						}						
+
+% Define Title en News input
+\newcommand{\JournalName}[1]{%
+		\begin{center}	
+			\Huge \usefont{T1}{augie}{m}{n}
+			#1%
+		\end{center}	
+		\par \normalsize \normalfont}
+		
+\newcommand{\JournalIssue}[1]{%
+		\hfill \textsc{\mydate \today, No #1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewsItem}[1]{%
+		\usefont{T1}{augie}{m}{n} 	
+		\large #1 \vspace{4pt}
+		\par \normalsize \normalfont}
+		
+\newcommand{\NewsAuthor}[1]{%
+			\hfill by \textsc{#1} \vspace{4pt}
+			\par \normalfont}		
+
+
+%%% ---------------
+%%% BEGIN DOCUMENT
+%%% ---------------
+\begin{document}
+% Title	
+% -----
+\JournalIssue{1}
+\JournalName{Science \& Technology}
+\noindent\HorRule{3pt} \\[-0.75\baselineskip]
+\HorRule{1pt}
+% -----
+
+% Front article
+% -----
+\vspace{0.5cm}
+	\SepRule
+\vspace{0.5cm}
+
+\begin{center}
+\begin{minipage}[h]{0.75\linewidth}
+	\begin{wrapfigure}{l}{0.41\textwidth}
+		\includegraphics[width=0.42\textwidth]{frog.jpg}
+		\\	% this spacer is needed to make the text on the right fit OK
+	\end{wrapfigure}
+	
+	\NewsItem{Frog eats monkey}
+	\emph{\blindtext}
+\end{minipage}
+\end{center}
+% -----
+
+
+% Other news (1)
+% -----
+\vspace{0.5cm}
+	\SepRule
+\vspace{0.5cm}
+\begin{multicols}{3}
+	\NewsItem{Monkey eats elephant}
+	\NewsAuthor{F. Wenneker}
+	\blindtext[2] 
+% -----
+
+\vspace{1cm}
+% Other news (2)
+% -----
+\NewsItem{Elephant eats frog}
+\NewsAuthor{J. Doe}
+	\blindtext[1]
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{elephant}
+		\end{center}
+		\blindtext[1]
+\end{multicols}
+% -----
+\end{document} 

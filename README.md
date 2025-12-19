@@ -54,22 +54,25 @@
 
 ```
 LaTeX-in-ICM-MCM/
-├── Template/                  # 主模板目录（推荐使用）
-│   ├── main.tex              # 主文档入口
-│   ├── part_1_pre.tex        # 问题分析部分（引言、假设、符号说明）
-│   ├── part_2_model.tex      # 模型建立部分（模型构建、求解）
-│   ├── part_3_conclusion.tex # 结论部分（结果分析、总结）
-│   ├── part_4_Appendix.tex   # 附录部分（代码、数据）
-│   ├── new_command.tex       # 自定义命令和宏定义
-│   ├── easymcm.sty           # EasyMCM宏包核心文件
-│   ├── img/                  # 图片资源文件夹
-│   └── _minted-main/         # 代码高亮缓存目录
-├── Memos/                     # 备忘录和信件模板
-│   ├── Letter/               # 官方信件模板
-│   └── XJTLU-Poster-Template-main/  # 海报模板
-├── LICENSE                    # 许可证文件
-├── .gitignore                # Git忽略文件配置
-└── README.md                  # 项目说明文档
+├── Template/                          # 主模板目录（推荐使用）
+│   ├── main.tex                      # 主文档入口
+│   ├── part_1_pre.tex                # 问题分析部分（引言、假设、符号说明）
+│   ├── part_2_model.tex              # 模型建立部分（模型构建、求解）
+│   ├── part_3_conclusion.tex         # 结论部分（结果分析、总结）
+│   ├── part_4_Appendix.tex           # 附录部分（代码、数据）
+│   ├── new_command.tex               # 自定义命令和宏定义
+│   ├── easymcm.sty                   # EasyMCM宏包核心文件
+│   ├── img/                          # 图片资源文件夹
+│   └── _minted-main/                 # 代码高亮缓存目录
+├── Memos/                             # 备忘录和信件模板
+│   ├── Letter/                       # 官方信件模板
+│   ├── Newsletter_Template/          # 新闻简报模板
+│   ├── LaTeX_Publicity_Brochure/     # 宣传手册模板(请使用pdfLaTeX编译)
+│   ├── TRMD_Pruefung/                # 测试模板
+│   └── XJTLU-Poster-Template-main/   # 海报模板(非A4版面，仅供参考)
+├── LICENSE                            # 许可证文件
+├── .gitignore                        # Git忽略文件配置
+└── README.md                          # 项目说明文档
 ```
 
 ## ✨ 模板特色功能
@@ -531,10 +534,14 @@ def calculate_sum(matrix):
 - **[Cai Hanlin(Lance)](https://caihanlin.com/)** - 分享了美赛的一些经验与建议
 - **[Gilles Castel](https://castel.dev/)** - LaTeX+Vim的1700页笔记工作流给我LaTeX使用的很多启发
 - **[Levitate Qian](https://levitate-qian.github.io/)** - 个人技术博客作者，分享了丰富的LaTeX使用经验和技巧
-- **[XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template)** - 提供了XJTLU会议海报的LaTeX模板，支持自定义内容和排版
 - **[B站-清风数学建模](https://space.bilibili.com/52614961?spm_id_from=333.337.0.0)** - 提供了数学算法、排版等新手教程，十分友好
 - **[B站-跟着浩然玩转高考物理](https://space.bilibili.com/384497590?spm_id_from=333.337.0.0)** - 分享了美赛的一些经验与得奖技巧
 - **[米醋电子工作室](https://www.micu.wiki/)** - 提供了一些AI编程的使用方法和技巧
+- **Overleaf模板资源** - 提供了多个实用的LaTeX模板，可以作为彩页或者海报使用
+  - **[LaTeX publicity brochure template](https://cn.overleaf.com/latex/templates/latex-publicity-brochure/dbqxssdqyjtv)** - 宣传手册模板，现代风格
+  - **[Newsletter template](https://cn.overleaf.com/latex/templates/newsletter-template/nzvznvdbdqpl)** - 新闻简报模板，内容分区
+  - **[TRMD Pruefung template](https://cn.overleaf.com/latex/templates/trmd-pruefung/jyshhkzszhsb)** - 报纸模板，简洁双栏展示
+  - **[XJTLU Poster Template](https://github.com/yaoshanliang/XJTLU-Poster-Template)** - 学术海报模板，会议格式
 
 ❗特别说明：本项目实际参考了互联网上很多优秀作者的资源（包括帖子、随笔、问答等），但是因为我的时间和精力有限，所以不能一一列出所有的参考资源，在此深感抱歉。如果您认为本项目参考了您的资源，欢迎联系我，我会在项目中添加您的资源链接。
 ## 🤝 贡献指南
@@ -561,7 +568,7 @@ def calculate_sum(matrix):
 - 必须保留原始许可证声明和版权信息
 - 修改后的版本不能声称是原始作品的官方版本
 
-基于EasyMCM v5.1模板开发，遵循相应开源协议。
+基于EasyMCM v5.1模板开发，遵循相应开源协议。Memo目录下的文件均遵循作者的原开源协议。
 
 ## 作者寄语
 作者从大一开始作为论文手参与数模竞赛，在四年时间中论文类比赛参加了十几场，累计写过的字数约有15w左右。在2022、2023年参加了3次美赛全是S奖，但是我也一直没有放弃学习，所以美赛的经验也为我后来其他竞赛提供了不少帮助。

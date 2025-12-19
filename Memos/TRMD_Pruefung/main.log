@@ -1,0 +1,293 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  19 DEC 2025 11:39
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**main
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count192
+\c@section=\count193
+\c@subsection=\count194
+\c@subsubsection=\count195
+\c@paragraph=\count196
+\c@subparagraph=\count197
+\c@figure=\count198
+\c@table=\count199
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count266
+\mult@box=\box52
+\multicol@leftmargin=\dimen144
+\c@unbalance=\count267
+\c@collectmore=\count268
+\doublecol@number=\count269
+\multicoltolerance=\count270
+\multicolpretolerance=\count271
+\full@width=\dimen145
+\page@free=\dimen146
+\premulticols=\dimen147
+\postmulticols=\dimen148
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box53
+\last@line=\box54
+\mc@boxedresult=\box55
+\maxbalancingoverflow=\dimen149
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@firstbox=\box58
+\mult@gfirstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\c@minrows=\count272
+\c@columnbadness=\count273
+\c@finalcolumnbadness=\count274
+\last@try=\dimen150
+\multicolovershoot=\dimen151
+\multicolundershoot=\dimen152
+\mult@nat@firstbox=\box96
+\colbreak@box=\box97
+\mc@col@check@num=\count275
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip53
+\f@nch@offset@elh=\skip54
+\f@nch@offset@erh=\skip55
+\f@nch@offset@olh=\skip56
+\f@nch@offset@orh=\skip57
+\f@nch@offset@elf=\skip58
+\f@nch@offset@erf=\skip59
+\f@nch@offset@olf=\skip60
+\f@nch@offset@orf=\skip61
+\f@nch@height=\skip62
+\f@nch@footalignment=\skip63
+\f@nch@widthL=\skip64
+\f@nch@widthC=\skip65
+\f@nch@widthR=\skip66
+\@temptokenb=\toks20
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count276
+\Gm@cntv=\count277
+\c@Gm@tempcnt=\count278
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks21
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box98
+\beforetitleunit=\skip67
+\aftertitleunit=\skip68
+\ttl@plus=\dimen161
+\ttl@minus=\dimen162
+\ttl@toksa=\toks22
+\titlewidth=\dimen163
+\titlewidthlast=\dimen164
+\titlewidthfirst=\dimen165
+) (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.sty (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
+\g__graphics_track_int=\count279
+\l__pdf_internal_box=\box99
+\g__pdf_backend_annotation_int=\count280
+\g__pdf_backend_link_int=\count281
+))
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count282
+\l__lipsum_a_int=\count283
+\l__lipsum_b_int=\count284
+ (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'english' will be used instead.
+
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+
+Overfull \vbox (4.6811pt too high) has occurred while \output is active []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]\TU/lmr/m/n/12 Pellentesque habitant morbi tristique
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]\TU/lmr/m/n/12 Morbi luctus, wisi viverra faucibus
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 2709 strings out of 475796
+ 49027 string characters out of 5771408
+ 544665 words of memory out of 5000000
+ 25662 multiletter control sequences out of 15000+600000
+ 558893 words of font info for 43 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 79i,11n,93p,211b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (2 pages).
