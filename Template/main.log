@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  19 DEC 2025 10:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  20 DEC 2025 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1250,6 +1250,12 @@ Overfull \hbox (2.19003pt too wide) in paragraph at lines 113--114
 \T1/ppl/m/n/12 ther con-firms the model's prac-ti-cal ap-pli-ca-bil-ity in real-world sce-nar-ios. The model's
  []
 
+LaTeX Font Info:    Trying to load font information for T1+pzc on input line 119.
+(d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/psnfss/t1pzc.fd
+File: t1pzc.fd 2020/03/25 font definitions for T1/pzc.
+)
+LaTeX Font Info:    Font shape `T1/pzc/m/n' in size <14> not available
+(Font)              Font shape `T1/pzc/m/it' tried instead on input line 119.
 )
 
 [12]
@@ -1306,11 +1312,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 328A63AF667B05A2D06A88AE6C3A6F95;6144.
  ) 
 Here is how much of TeX's memory you used:
- 36650 strings out of 475796
- 722712 string characters out of 5771408
- 1495270 words of memory out of 5000000
- 58924 multiletter control sequences out of 15000+600000
- 593995 words of font info for 99 fonts, out of 8000000 for 9000
+ 36668 strings out of 475796
+ 723084 string characters out of 5771408
+ 1495329 words of memory out of 5000000
+ 58938 multiletter control sequences out of 15000+600000
+ 595245 words of font info for 100 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  98i,19n,107p,773b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
