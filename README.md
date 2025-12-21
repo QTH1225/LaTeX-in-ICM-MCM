@@ -75,6 +75,18 @@ LaTeX-in-ICM-MCM/
 └── README.md                          # 项目说明文档
 ```
 
+## 📺Bilibili视频教程
+
+<div align="center">
+<a href="https://www.bilibili.com/video/BV1eUq6BaExX/?vd_source=c9aec1ceeb3f902c29080b5bd434c5da" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251221093158075.webp" alt="【26开源数模美赛LaTeX模板】视频教程" width="400" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</a>
+
+<br>
+<strong>【26开源数模美赛LaTeX模板】免费的专业美赛LaTeX模板+美化的彩页海报+数十个建模资料链接</strong>
+<br>
+</div>
+
 ## ✨ 模板特色功能
 
 ### 🎯 美赛专用功能
