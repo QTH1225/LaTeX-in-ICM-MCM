@@ -79,7 +79,7 @@ LaTeX-in-ICM-MCM/
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1eUq6BaExX/?vd_source=c9aec1ceeb3f902c29080b5bd434c5da" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251221093158075.webp" alt="【26开源数模美赛LaTeX模板】视频教程" width="400" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="https://cdn.jsdelivr.net/gh/QTH1225/Blog_Figures/img/20251221093158075.webp" alt="【26开源数模美赛LaTeX模板】视频教程" width="800" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </a>
 
 <br>
