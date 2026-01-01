@@ -3,7 +3,7 @@
 # $\LaTeX$-in-ICM&MCM：简单全面的美赛LaTeX模板
 
 <!-- 项目徽章 -->
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.2.1-blue.svg)
 ![License](https://img.shields.io/badge/license-LPPL%201.3c-blue.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
@@ -481,6 +481,7 @@ def calculate_sum(matrix):
 - [LaTeX Live Editor](https://www.latexlive.com/) - 在线LaTeX公式编辑器，实时预览数学公式
 - [Detexify](https://detexify.kirelabs.org/classify.html) - LaTeX符号识别工具，手绘识别数学符号
 - [Tables Generator](https://www.tablesgenerator.com/) - 在线表格生成器，支持LaTeX表格代码生成
+- [Google Fonts](https://fonts.google.com/) - 免费字体库，提供多种专业字体
 
 #### 写作辅助工具
 - [写作猫](https://xiezuocat.com/) - AI写作助手，支持文档润色和语法检查
@@ -506,7 +507,7 @@ def calculate_sum(matrix):
 #### 统计分析工具
 - [SPSSPRO](https://www.spsspro.com/) - 在线统计分析平台，提供专业的统计分析功能
 - [BioLadder](https://www.bioladder.cn/web/#/toolSet) - 生物信息学工具集，提供多种数据分析工具
-
+- [Tableau](https://www.tableau.com/) - 数据可视化工具，提供强大的数据分析和可视化功能
 #### 数据资源与知识库
 - [Our World in Data](https://ourworldindata.org/) - 全球数据可视化平台，涵盖多领域统计数据
 - [Towards Data Science](https://towardsdatascience.com/) - 数据科学社区，分享数据分析和机器学习知识
