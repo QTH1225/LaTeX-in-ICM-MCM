@@ -105,6 +105,55 @@
  }
 %-------------------------------------------附录代码排版盒子（止）
 
+% AI报告专用代码高亮样式（无边框，支持跨页）
+\lstdefinestyle{ai_python_style}{
+    language = Python,
+    numbers = none,  % 去掉行号
+    basicstyle = \footnotesize\fontfamily{pcr}\selectfont,
+    keywordstyle = \color{darkblue}\bfseries,
+    commentstyle = \color{darkgreen},
+    stringstyle = \color{red!60},
+    showstringspaces = false,
+    emphstyle = \color{orange!60},
+    emph = {self, cls, True, False, None},
+    breaklines = true,
+    breakatwhitespace = true,
+    postbreak = \mbox{\textcolor{gray}{$\hookrightarrow$}\space},
+    frame = none,  % 无边框
+    backgroundcolor = \color{white},
+    xleftmargin = 0pt,
+    xrightmargin = 0pt,
+    framexleftmargin = 0pt,
+    framexrightmargin = 0pt,
+    framextopmargin = 0pt,
+    framexbottommargin = 0pt
+}
+
+\lstdefinestyle{ai_matlab_style}{
+    style = Matlab-editor,
+    numbers = none,  % 去掉行号
+    basicstyle = \footnotesize\fontfamily{pcr}\selectfont,
+    breaklines = true,
+    breakatwhitespace = true,
+    postbreak = \mbox{\textcolor{gray}{$\hookrightarrow$}\space},
+    frame = none,  % 无边框
+    backgroundcolor = \color{white},
+    xleftmargin = 0pt,
+    xrightmargin = 0pt,
+    framexleftmargin = 0pt,
+    framexrightmargin = 0pt,
+    framextopmargin = 0pt,
+    framexbottommargin = 0pt
+}
+
+\lstnewenvironment{ai_python}[1][]
+    {\lstset{style=ai_python_style, #1}}
+    {}
+
+\lstnewenvironment{ai_matlab}[1][]
+    {\lstset{style=ai_matlab_style, #1}}
+    {}
+
 \input{new_command.tex} %载入新命令
 %\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} %
 \title{Input Your Article Title Here \\ if it is too Long}  % 标题

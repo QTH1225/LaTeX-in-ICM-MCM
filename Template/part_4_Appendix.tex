@@ -94,7 +94,7 @@ data = {
 }
 df = pd.DataFrame(data)
 
-# Data analysis and visualization
+# Long Long  Long Long  Long Long  Long Long  Long Long Data analysis and visualization# 
 print("Data statistics:")
 print(df.describe())
 
@@ -113,11 +113,11 @@ This section documents the interactions between the author and AI assistant duri
 
 \subsection{Model Development Assistance}
 
-\begin{tcolorbox}[title=\textbf{Question: How to optimize the UAV path planning algorithm?}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{Question: How to optimize the UAV path planning algorithm?}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I'm working on a UAV path planning algorithm for wildfire monitoring. The current approach uses a grid-based method, but I'm encountering issues with computational efficiency when scaling to larger areas. What optimization techniques would you recommend?
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
 For UAV path planning optimization in wildfire scenarios, consider these approaches:
 
 1. \textbf{Hybrid algorithms}: Combine genetic algorithms with simulated annealing for better convergence
@@ -130,11 +130,11 @@ The key is to balance exploration and exploitation while considering real-time c
 
 \subsection{Data Processing and Analysis}
 
-\begin{tcolorbox}[title=\textbf{Question: Data preprocessing for wildfire detection}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{Question: Data preprocessing for wildfire detection}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I have satellite imagery data for wildfire detection, but there's significant noise and missing values. What preprocessing steps should I implement before applying machine learning models?
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
 Recommended preprocessing pipeline:
 
 \begin{itemize}
@@ -150,11 +150,11 @@ Also, implement cross-validation to ensure model generalization.
 
 \subsection{Mathematical Formulation Assistance}
 
-\begin{tcolorbox}[title=\textbf{Question: Mathematical modeling for fire spread prediction}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{Question: Mathematical modeling for fire spread prediction}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I need to develop a mathematical model for wildfire spread prediction. What are the key factors and equations I should consider?
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
 Key factors for wildfire spread modeling:
 
 \begin{align*}
@@ -176,15 +176,15 @@ Consider wind effects, topography, and fuel moisture content as additional param
 
 \subsection{Code Implementation Support}
 
-\begin{tcolorbox}[title=\textbf{Question: MATLAB implementation for data visualization}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{Question: MATLAB implementation for data visualization}, colback=blue!2!white, colframe=blue!30!black, fonttitle=\bfseries, breakable]
 I need to create effective visualizations for wildfire data analysis in MATLAB. What plotting techniques and functions would you recommend?
 \end{tcolorbox}
 
-\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries]
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
 For wildfire data visualization in MATLAB:
 
-\begin{lstlisting}[language=Matlab]
-% Heat map for temperature distribution
+\begin{ai_matlab}
+%Long Long Long Long Long Long Long Long Long Long Long Long Heat map for temperature distribution
 heatmap(temperatureData, 'Colormap', hot);
 
 % Time series for fire progression
@@ -195,7 +195,51 @@ surf(X, Y, elevation, fireIntensity);
 
 % Geographic plotting with mapping toolbox
 geoplot(lat, lon, 'r-', 'LineWidth', 2);
-\end{lstlisting}
+\end{ai_matlab}
+
+Use subplot for multi-panel figures and customize colormaps for better interpretation.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=\textbf{AI Response}, colback=green!2!white, colframe=green!30!black, fonttitle=\bfseries, breakable]
+For wildfire data visualization in Python:
+
+\begin{ai_python}
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+
+# Long Long Long Long Long Long Long Long Long Long Long Long Define differential equation (growth phase)
+def model(state, t, params):
+    C, V = state
+    r_C, K, ... = params
+    dCdt = r_C * C * (1 - (C + V) / K)
+    dVdt = ... 
+    return [dCdt, dVdt]
+
+# Parameter settings
+T_harvest = 365  # Harvest cycle
+T_total = 3650   # Total simulation time
+dt = 1
+
+# Loop simulation
+t_current = 0
+state = [C0, V0]
+results = []
+
+while t_current < T_total:
+    t_next = t_current + T_harvest
+    t_span = np.linspace(t_current, t_next, int(T_harvest/dt))
+    
+    # Integrate one cycle
+    sol = odeint(model, state, t_span, args=(params,))
+    results.append(sol)
+    
+    # Apply pulse (harvest event)
+    state = sol[-1] # Get state at end of cycle
+    state[0] = state[0] * (1 - h) # Crop removal ratio h
+    
+    t_current = t_next
+\end{ai_python}
 
 Use subplot for multi-panel figures and customize colormaps for better interpretation.
 \end{tcolorbox}
@@ -203,3 +247,7 @@ Use subplot for multi-panel figures and customize colormaps for better interpret
 \subsection{Conclusion on AI Usage}
 
 The AI assistant provided valuable support in algorithm optimization, data preprocessing guidance, mathematical formulation, and code implementation. All final decisions, analysis, and interpretations were made by the human author, with AI serving as a collaborative tool for brainstorming and technical guidance.
+
+
+
+

@@ -27,8 +27,8 @@
 \contentsline {subsection}{\numberline {B.2}Data Analysis with Python}{16}{subsection.B.2}%
 \contentsline {section}{\numberline {C}Use of AI}{17}{appendix.C}%
 \contentsline {subsection}{\numberline {C.1}Model Development Assistance}{17}{subsection.C.1}%
-\contentsline {subsection}{\numberline {C.2}Data Processing and Analysis}{17}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.2}Data Processing and Analysis}{18}{subsection.C.2}%
 \contentsline {subsection}{\numberline {C.3}Mathematical Formulation Assistance}{18}{subsection.C.3}%
-\contentsline {subsection}{\numberline {C.4}Code Implementation Support}{18}{subsection.C.4}%
-\contentsline {subsection}{\numberline {C.5}Conclusion on AI Usage}{19}{subsection.C.5}%
+\contentsline {subsection}{\numberline {C.4}Code Implementation Support}{19}{subsection.C.4}%
+\contentsline {subsection}{\numberline {C.5}Conclusion on AI Usage}{20}{subsection.C.5}%
 \contentsfinish 
