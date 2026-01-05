@@ -503,6 +503,7 @@ def calculate_sum(matrix):
 - [Overleaf 30分钟LaTeX教程](https://cn.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) - 快速入门LaTeX的官方教程，适合初学者
 - [正确写作美国大学生数学建模竞赛论文](https://zh.z-library.sk/book/117304968/32dc10/%E6%AD%A3%E7%A1%AE%E5%86%99%E4%BD%9C%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9B%E8%AE%BA%E6%96%87.html) - 美赛论文写作指南，包含格式规范和注意事项
 - [LaTeX数学符号速查表](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) - 完整的LaTeX数学符号参考手册，方便查找特殊符号
+- [LaTeX笔记教程](https://github.com/BenjaminGor/Latex_Notes_Tutorial) - 包含LaTeX基础、常用宏包、表格、图表、数学公式等的详细笔记教程，适合初学者和进阶用户
 ### 📊 数据处理与分析工具
 #### 统计分析工具
 - [SPSSPRO](https://www.spsspro.com/) - 在线统计分析平台，提供专业的统计分析功能
