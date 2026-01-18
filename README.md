@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/license-LPPL%201.3c-blue.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
+![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?style=flat&color=success&label=Downloads)
 ![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
 ![Last commit](https://img.shields.io/github/last-commit/QTH1225/LaTeX-in-ICM-MCM?color=blue&label=Last%20commit&cacheSeconds=3600)
 
@@ -540,7 +541,9 @@ def calculate_sum(matrix):
 - [Amyxun](https://www.amyxun.com/) - Axmath与AxGlyph介绍网址
 - [WordTeX](https://tomwildenhain.com/wordtex/) - 如何在Word上以假乱真的模仿LaTeX文档
 
-
+## 往年美赛资源
+- [2025E题F奖](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model) - 来自[@LUKEQ420](https://github.com/LUKEQ420)的2025年E题F奖解题模型
+- [2023年B题F奖](https://github.com/GuangLun2000/COMAP-MCM-2026) - 来自[@GuangLun2000](https://github.com/GuangLun2000)的2023年B题F奖解题模型
 
 ## 特别感谢
 - **[EasyMCM项目](https://github.com/xjtu-blacksmith/easymcm)** - 提供了基础模板，为本项目奠定了基础
@@ -603,3 +606,4 @@ def calculate_sum(matrix):
   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
 </picture>
+
