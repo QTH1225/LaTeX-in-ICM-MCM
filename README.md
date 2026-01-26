@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-LPPL%201.3c-blue.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
-![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?style=flat&color=success&label=Downloads)
+![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total.svg?style=flat&color=success&label=Downloads)
 ![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
 ![Last commit](https://img.shields.io/github/last-commit/QTH1225/LaTeX-in-ICM-MCM?color=blue&label=Last%20commit&cacheSeconds=3600)
 
@@ -606,4 +606,5 @@ def calculate_sum(matrix):
   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=QTH1225/LaTeX-in-ICM-MCM&type=Date" />
 </picture>
+
 
