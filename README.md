@@ -13,7 +13,7 @@
 
 </div>
 
-一个专为美国大学生数学建模竞赛（MCM/ICM）设计的LaTeX模板库，基于EasyMCM模板进行了深度优化和功能增强，提供完整的论文写作解决方案。本项目在我的[博客](https://qintianhao.com/)同步进行发布。
+一个专为美国大学生数学建模竞赛（MCM/ICM）设计的LaTeX模板库，基于[EasyMCM模板](https://github.com/xjtu-blacksmith/easymcm)进行了深度优化和功能增强，主要增加了代码排版和AI报告，此外对图表的排版进行了优化，提供完整的论文写作解决方案。本项目遵循 [LaTeX Project Public License 1.3c (LPPL 1.3c)](#-许可证)许可，在我的[博客](https://qintianhao.com/)同步进行发布。
 
 此外，本项目整理了大量论文写作、绘图以及编程中可能用到的资源，在[其他资源（必看）](#其他资源必看)章节中详细列出。 
 
