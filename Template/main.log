@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  1 JAN 2026 09:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.7.17)  1 FEB 2026 09:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,8 +23,8 @@ File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
-) (./easymcm.sty
-Package: easymcm 2019/01/21 EasyMCM v5.1
+) (./easymcm2.sty
+Package: easymcm2 2019/01/21 EasyMCM v5.1
 
 EasyMCM Package, version 5.1
 (d:/001Softwares/A03Research/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1310,20 +1310,13 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: A18BEAD93DE24F5F8332F50DD262CE43;6177
-(rerunfilecheck)             After:  328A63AF667B05A2D06A88AE6C3A6F95;6144.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 328A63AF667B05A2D06A88AE6C3A6F95;6144.
  ) 
 Here is how much of TeX's memory you used:
  36220 strings out of 475796
- 717941 string characters out of 5771408
- 1536487 words of memory out of 5000000
+ 717961 string characters out of 5771408
+ 1536521 words of memory out of 5000000
  58490 multiletter control sequences out of 15000+600000
  595245 words of font info for 100 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
