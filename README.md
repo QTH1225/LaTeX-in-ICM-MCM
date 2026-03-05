@@ -7,9 +7,9 @@
 ![License](https://img.shields.io/badge/license-LPPL%201.3c-blue.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 ![MCM/ICM](https://img.shields.io/badge/MCM%2FICM-Optimized-red.svg)
-![Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total.svg?style=flat&color=success&label=Downloads)
-![Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=social)
-![Last commit](https://img.shields.io/github/last-commit/QTH1225/LaTeX-in-ICM-MCM?color=blue&label=Last%20commit&cacheSeconds=3600)
+![GitHub Downloads](https://img.shields.io/github/downloads/QTH1225/LaTeX-in-ICM-MCM/total?style=flat&color=blue&label=Downloads)
+![GitHub Stars](https://img.shields.io/github/stars/QTH1225/LaTeX-in-ICM-MCM?style=flat&color=red&label=Stars)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/QTH1225/LaTeX-in-ICM-MCM?style=flat&color=blue&label=Last%20Commit)
 
 </div>
 
